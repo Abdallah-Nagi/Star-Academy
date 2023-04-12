@@ -1,0 +1,38 @@
+.introduction {
+  background-color: black;
+  margin-top: 6rem;
+}
+
+h1 {
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.special-clr {
+  color: goldenrod;
+}
+.introduction p {
+  color: white;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+.btn-container .btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  margin: 0 auto 1rem auto;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  border: 3px solid goldenrod;
+  background-color: #36454f;
+  color: white;
+}
+.btn-container .btn:hover {
+  border: 3px solid #36454f;
+  color: goldenrod;
+}

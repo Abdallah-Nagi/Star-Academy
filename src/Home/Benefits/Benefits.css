@@ -1,0 +1,33 @@
+.benefits {
+  background-color: #36454f;
+  padding: 1rem 1rem 4rem 1rem;
+}
+
+.benefits h2 {
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.benefit-container {
+  margin-bottom: 2rem;
+}
+.benefit-container .title-container {
+  display: flex;
+  flex-direction: column;
+  color: goldenrod;
+  font-size: 1.25rem;
+}
+.title-container .icon {
+  margin-bottom: -0.5rem;
+  font-size: 2rem;
+}
+
+.title-container .title {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.benefit-container .description {
+  color: white;
+  font-size: 0.9rem;
+}

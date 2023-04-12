@@ -1,0 +1,48 @@
+.footer {
+  padding: 1rem;
+  background-color: #36454f;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.info h4,
+.links h4 {
+  color: goldenrod;
+  text-transform: uppercase;
+}
+
+.link-container a {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 0.25rem;
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+}
+.link-container .icon {
+  color: goldenrod;
+  margin-right: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.link-container a:hover {
+  color: goldenrod;
+}
+
+.links a {
+  color: white;
+  margin-left: 0.25rem;
+}
+
+.links a:hover {
+  color: goldenrod;
+}
+.footer small {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  color: black;
+}

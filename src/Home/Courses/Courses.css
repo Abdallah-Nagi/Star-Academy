@@ -1,0 +1,111 @@
+.courses {
+  background-color: #f8f9ff;
+  padding: 1rem 1rem 4rem 1rem;
+}
+
+.courses h2 {
+  color: goldenrod;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.courses-container {
+  margin-bottom: 3rem;
+}
+.course-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  background-color: #36454f;
+  padding: 1rem;
+}
+.course-main .desc,
+.course-description .desc {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-style: italic;
+  color: goldenrod;
+  display: block;
+  margin-bottom: -0.2rem;
+}
+.course-main h4 {
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.course-main a {
+  color: goldenrod;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+.course-main a:hover {
+  color: rgb(180, 120, 0);
+}
+
+.course-tutor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-tutor {
+  display: block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 1px solid goldenrod;
+  object-fit: cover;
+}
+
+.name-tutor {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  color: goldenrod;
+  display: block;
+}
+
+.course-description {
+  background-color: rgb(222, 222, 222);
+  padding: 1rem;
+}
+
+.course-description ul {
+  list-style: disc;
+  font-size: 0.9rem;
+}
+.course-description ul li {
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+.course-description ul li::marker {
+  color: goldenrod;
+  margin-right: 2rem;
+}
+
+.price-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 1rem;
+}
+.course-description .price-desc {
+  text-transform: capitalize;
+  color: goldenrod;
+  font-style: italic;
+  display: block;
+  margin-right: 0.5rem;
+}
+.course-description .price {
+  font-weight: bold;
+}
+
+.course-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-btn-container {
+  padding: 0;
+}

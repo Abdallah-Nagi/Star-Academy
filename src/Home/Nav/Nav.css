@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap");
+
+main {
+  height: 400vh;
+}
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 15px 0px;
+  padding: 1rem;
+  z-index: 1;
+}
+.nav-list {
+  height: 4rem;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+.nav-item a {
+  color: black;
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  line-height: 0;
+}
+
+.nav-icon {
+  margin-bottom: -0.5rem;
+}
+.icon {
+  font-size: 1.5rem;
+}
+
+.brand-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.brand-logo .name {
+  font-size: 2rem;
+  font-family: "Dancing Script", cursive;
+  color: #36454f;
+}
+.full-menu {
+  position: fixed;
+  transform: translateX(100%);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: #f8f9ff;
+}
+.full-menu.open {
+  transform: translateX(0);
+  transition: all 0.5s ease-in-out;
+}
+.full-menu.close {
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+}
+/* **************** */
+.full-menu-nav {
+  padding: 1rem;
+  height: 3rem;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 15px 0px;
+}
+
+.full-menu-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
+.full-menu-nav-item {
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.75rem;
+  line-height: 0;
+}
+.full-menu-nav-item.icon {
+  margin-bottom: -0.5rem;
+}
+
+.full-menu-body-list {
+  padding: 1rem;
+  list-style: none;
+}
+.full-menu-body-item {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+.full-menu-body-item a {
+  display: flex;
+  align-items: center;
+  color: #36454f;
+  padding: 0.5rem;
+  width: fit-content;
+}
+.full-menu-body-logo {
+  margin-right: 1rem;
+  line-height: 0;
+  color: goldenrod;
+}
+
+/* STAR LOGO */
+.brand-logo .logo {
+  --star-color: goldenrod;
+  margin: 1em auto;
+  margin-right: 0.3rem;
+  font-size: 1rem;
+  position: relative;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-right: 1em solid transparent;
+  border-bottom: 0.7em solid var(--star-color);
+  border-left: 1em solid transparent;
+  transform: rotate(35deg);
+}
+.brand-logo .logo:before {
+  border-bottom: 0.8em solid var(--star-color);
+  border-left: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -0.45em;
+  left: -0.65em;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+.brand-logo .logo:after {
+  position: absolute;
+  display: block;
+  top: 0.03em;
+  left: -1.05em;
+  width: 0;
+  height: 0;
+  border-right: 1em solid transparent;
+  border-bottom: 0.7em solid var(--star-color);
+  border-left: 1em solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
