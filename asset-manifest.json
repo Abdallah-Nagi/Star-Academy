@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Abdallah-Nagi/Star-Academy/static/css/main.eaf5162f.css",
+    "main.js": "/Abdallah-Nagi/Star-Academy/static/js/main.8c1008e0.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Abdallah-Nagi/Star-Academy/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/Abdallah-Nagi/Star-Academy/index.html",
+    "main.eaf5162f.css.map": "/Abdallah-Nagi/Star-Academy/static/css/main.eaf5162f.css.map",
+    "main.8c1008e0.js.map": "/Abdallah-Nagi/Star-Academy/static/js/main.8c1008e0.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Abdallah-Nagi/Star-Academy/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eaf5162f.css",
+    "static/js/main.8c1008e0.js"
+  ]
+}
