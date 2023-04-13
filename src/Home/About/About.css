@@ -1,49 +1,95 @@
 .about {
   position: relative;
-  background-color: #f8f9ff;
+  background-color: var(--color-light);
 }
 
 .title-icon {
   position: relative;
 }
 .title-icon .design-main {
+  position: relative;
   display: block;
   font-size: 10rem;
   text-align: center;
   padding-top: 1rem;
-  color: #36454f;
+  color: var(--color-secondary);
+  z-index: 5;
 }
 
 .title-icon .design-secondary {
   position: absolute;
-  font-size: 3rem;
+  z-index: 4;
 }
 
 .title-icon .design-secondary.one {
-  color: rgba(128, 128, 128, 0.17);
+  color: var(--color-primary-light);
   font-size: 2rem;
+  font-style: italic;
   left: calc(50% + 4.5rem);
   bottom: calc(50% + 2rem);
 }
+.title-icon .design-secondary.two {
+  color: var(--color-primary-light);
+  font-size: 2.5rem;
+  font-style: italic;
+  left: calc(50% + 3rem);
+  bottom: calc(50% - 4.5rem);
+}
+.title-icon .design-secondary.three {
+  color: var(--color-primary-light);
+  font-size: 3rem;
+  font-style: italic;
+  left: calc(50% - 7rem);
+  bottom: calc(50% - 4rem);
+}
+.title-icon .design-secondary.four {
+  color: var(--color-primary-light);
+  font-size: 5rem;
+  font-style: italic;
+  left: calc(50% - 6rem);
+  bottom: calc(50% + 0.5rem);
+}
+.title-icon .design-secondary.four::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: 190px;
+  width: 240px;
+  height: 4px;
+  background-color: var(--color-dark);
+  opacity: 0.25;
+}
+.title-icon .design-secondary.five {
+  width: 50px;
+  height: 700px;
+  background-color: var(--color-secondary-light);
+  opacity: 0.25;
+  position: absolute;
+  top: -39%;
+  left: 42%;
+  transform: rotate(38deg);
+  z-index: 3;
+}
 
-/* DESIGN ICON */
-.design-icon {
-  --star-color: goldenrod;
+/* STAR ICON */
+.star-icon {
   margin: 1em auto;
   font-size: 4em;
   position: absolute;
-  top: -75px;
-  left: 0px;
+  top: 387px;
+  right: -30px;
+  opacity: 0.35;
   display: block;
   width: 0px;
   height: 0px;
   border-right: 1em solid transparent;
-  border-bottom: 0.7em solid var(--star-color);
+  border-bottom: 0.7em solid var(--color-secondary-light);
   border-left: 1em solid transparent;
   transform: rotate(120deg);
 }
-.design-icon:before {
-  border-bottom: 0.8em solid var(--star-color);
+.star-icon:before {
+  border-bottom: 0.8em solid var(--color-secondary-light);
   border-left: 0.3em solid transparent;
   border-right: 0.3em solid transparent;
   position: absolute;
@@ -55,7 +101,7 @@
   content: "";
   transform: rotate(-35deg);
 }
-.design-icon:after {
+.star-icon:after {
   position: absolute;
   display: block;
   top: 0.03em;
@@ -63,7 +109,7 @@
   width: 0;
   height: 0;
   border-right: 1em solid transparent;
-  border-bottom: 0.7em solid var(--star-color);
+  border-bottom: 0.7em solid var(--color-secondary-light);
   border-left: 1em solid transparent;
   transform: rotate(-70deg);
   content: "";
@@ -72,17 +118,19 @@
 /* ********** */
 .about-paragraph {
   padding: 1rem;
-  color: #36454f;
+  color: var(--color-black);
+  text-align: justify;
   margin-top: -2rem;
   line-height: 1.7;
 }
 .about-paragraph span {
+  color: var(--color-dark);
   display: block;
   font-weight: bold;
 }
 
 .about-btn-container {
-  padding: 3rem 0 3rem 0;
+  padding: 2rem 0 3rem 0;
 }
 .about-btn-container .btn {
   display: flex;
@@ -94,11 +142,11 @@
   margin: 0 auto 1rem auto;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
-  border: 3px solid goldenrod;
-  color: white;
-  background-color: #36454f;
+  border: none;
+  color: var(--color-white);
+  background-color: var(--color-dark);
   font-weight: 500;
 }
 .about-btn-container .btn:hover {
-  color: goldenrod;
+  opacity: 0.8;
 }

@@ -21,8 +21,9 @@ function About() {
         <span className="design-secondary four">
           <AiFillPieChart />
         </span>
+        <span className="design-secondary five"></span>
       </div>
-      <div className="design-icon"></div>
+      <div className="star-icon"></div>
       <div className="design-shape"></div>
       <p className="about-paragraph">
         Star Academy is built to create well-rounded igcse courses for the

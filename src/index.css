@@ -6,4 +6,15 @@
 body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+:root {
+  --color-primary: #daa520;
+  --color-primary-light: #f4d195;
+  --color-secondary: #40e0d0;
+  --color-secondary-light: #b0f1e7;
+  --color-white: white;
+  --color-light: #f8f9ff;
+  --color-black: black;
+  --color-dark: #36454f;
 }

@@ -1,21 +1,26 @@
 .introduction {
-  background-color: black;
+  background-color: var(--color-black);
   margin-top: 6rem;
 }
 
 h1 {
-  color: white;
+  font-size: 2rem;
+  color: var(--color-white);
   padding: 1rem 1rem 0 1rem;
   text-align: center;
 }
 .special-clr {
-  color: goldenrod;
+  color: var(--color-primary);
 }
 .introduction p {
-  color: white;
+  color: var(--color-white);
+  text-align: justify;
   padding: 1rem;
 }
-
+.introduction p span {
+  color: var(--color-primary);
+  font-weight: bold;
+}
 .introduction-btn-container {
   display: flex;
   flex-direction: column;
@@ -31,12 +36,12 @@ h1 {
   margin: 0 auto 1rem auto;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
-  border: 1px solid white;
-  background-color: goldenrod;
-  font-weight: 500;
+  border: none;
+  background-color: var(--color-secondary);
+  color: var(--color-black);
+  font-weight: bold;
+  font-size: 1rem;
 }
 .introduction-btn-container .btn:hover {
-  border: 2px solid white;
-  background-color: black;
-  color: goldenrod;
+  background-color: var(--color-secondary-light);
 }

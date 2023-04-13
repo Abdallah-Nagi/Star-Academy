@@ -9,14 +9,14 @@ function Introduction() {
         's
       </h1>
       <p>
-        Achieve the highest scores via Star Academy. We provide outstanding
-        igcse courses in a variety of subjects, our top-notch tutors not only
-        provide solid understanding of the curriculum but also focus on solving
-        myriad of previous exams questions to ease the exam for our studnets.
+        Achieve the highest scores via
+        <span> Star Academy</span>. We provide outstanding IGCSE courses in a
+        variety of subjects, our top-notch tutors not only provide solid
+        tutoring of the curriculum but also focus on solving myriad of previous
+        exams questions to ease the exam for our studnets.
       </p>
       <div className="introduction-btn-container">
-        <button className="btn">Check our courses</button>
-        <button className="btn">Login / Signup</button>
+        <button className="btn">View courses</button>
       </div>
     </section>
   );

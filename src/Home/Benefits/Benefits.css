@@ -1,33 +1,36 @@
 .benefits {
-  background-color: #36454f;
+  background-color: var(--color-black);
   padding: 1rem 1rem 4rem 1rem;
 }
 
 .benefits h2 {
-  color: white;
+  color: var(--color-light);
+  font-size: 2rem;
+  text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 .benefit-container {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 .benefit-container .title-container {
   display: flex;
   flex-direction: column;
-  color: goldenrod;
+  color: var(--color-primary);
   font-size: 1.25rem;
 }
 .title-container .icon {
-  margin-bottom: -0.5rem;
+  margin-bottom: -1rem;
   font-size: 2rem;
 }
 
 .title-container .title {
+  font-size: 2rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
 .benefit-container .description {
-  color: white;
+  color: var(--color-secondary-light);
   font-size: 0.9rem;
 }
