@@ -37,6 +37,7 @@ a {
 .nav-icon {
   margin-bottom: -0.5rem;
 }
+
 .icon {
   font-size: 1.5rem;
 }
@@ -102,7 +103,6 @@ a {
 }
 .full-menu-body-item {
   margin-bottom: 1rem;
-  font-size: 1.25rem;
 }
 .full-menu-body-item a {
   display: flex;
@@ -111,7 +111,10 @@ a {
   padding: 0.5rem;
   width: fit-content;
 }
-.full-menu-body-logo {
+.full-menu-body-item a:hover {
+  color: goldenrod;
+}
+.full-menu-body-icon {
   margin-right: 1rem;
   line-height: 0;
   color: goldenrod;

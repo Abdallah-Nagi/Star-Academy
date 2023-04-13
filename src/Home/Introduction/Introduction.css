@@ -5,7 +5,7 @@
 
 h1 {
   color: white;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
   text-align: center;
 }
 .special-clr {
@@ -13,26 +13,30 @@ h1 {
 }
 .introduction p {
   color: white;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
 }
 
-.btn-container {
+.introduction-btn-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
   padding-bottom: 3rem;
 }
-.btn-container .btn {
+.introduction-btn-container .btn {
   width: 200px;
   height: 50px;
   border-radius: 20px;
   margin: 0 auto 1rem auto;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
-  border: 3px solid goldenrod;
-  background-color: #36454f;
-  color: white;
+  border: 1px solid white;
+  background-color: goldenrod;
+  font-weight: 500;
 }
-.btn-container .btn:hover {
-  border: 3px solid #36454f;
+.introduction-btn-container .btn:hover {
+  border: 2px solid white;
+  background-color: black;
   color: goldenrod;
 }

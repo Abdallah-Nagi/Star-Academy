@@ -4,10 +4,26 @@
 }
 
 .title-icon {
+  position: relative;
+}
+.title-icon .design-main {
+  display: block;
   font-size: 10rem;
   text-align: center;
   padding-top: 1rem;
   color: #36454f;
+}
+
+.title-icon .design-secondary {
+  position: absolute;
+  font-size: 3rem;
+}
+
+.title-icon .design-secondary.one {
+  color: rgba(128, 128, 128, 0.245);
+  font-size: 2rem;
+  left: calc(50% + 4.5rem);
+  bottom: calc(50% + 2rem);
 }
 
 /* DESIGN ICON */
@@ -65,10 +81,13 @@
   font-weight: bold;
 }
 
-.btn-container {
+.about-btn-container {
   padding: 3rem 0 3rem 0;
 }
-.btn-container .btn {
+.about-btn-container .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 50px;
   border-radius: 20px;
@@ -76,10 +95,10 @@
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   border: 3px solid goldenrod;
-  background-color: #36454f;
   color: white;
+  background-color: #36454f;
+  font-weight: 500;
 }
-.btn-container .btn:hover {
-  border: 3px solid #36454f;
+.about-btn-container .btn:hover {
   color: goldenrod;
 }

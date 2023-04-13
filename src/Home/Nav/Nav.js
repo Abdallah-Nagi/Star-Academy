@@ -56,7 +56,7 @@ function Nav() {
           <ul className="full-menu-body-list">
             <li className="full-menu-body-item">
               <a href="#">
-                <span className="full-menu-body-logo">
+                <span className="full-menu-body-icon">
                   <AiOutlineHome />
                 </span>
                 <span className="full-menu-body-text">Home</span>
@@ -64,7 +64,7 @@ function Nav() {
             </li>
             <li className="full-menu-body-item">
               <a href="#">
-                <span className="full-menu-body-logo">
+                <span className="full-menu-body-icon">
                   <FaBook />
                 </span>
                 <span className="full-menu-body-text">Courses</span>
@@ -72,7 +72,7 @@ function Nav() {
             </li>
             <li className="full-menu-body-item">
               <a href="#">
-                <span className="full-menu-body-logo">
+                <span className="full-menu-body-icon">
                   <MdGroups />
                 </span>
                 <span className="full-menu-body-text">Staff</span>
@@ -80,7 +80,7 @@ function Nav() {
             </li>
             <li className="full-menu-body-item">
               <a href="#">
-                <span className="full-menu-body-logo">
+                <span className="full-menu-body-icon">
                   <BsFillPersonFill />
                 </span>
                 <span className="full-menu-body-text">Account</span>
