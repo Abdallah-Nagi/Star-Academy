@@ -1,13 +1,16 @@
 .benefits {
+  position: relative;
   background-color: var(--color-black);
   padding: 1rem 1rem 4rem 1rem;
 }
 
 .benefits h2 {
+  position: relative;
   color: var(--color-secondary);
   font-size: 2rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  z-index: 4;
 }
 
 .benefit-container {
@@ -33,43 +36,23 @@
   font-size: 0.9rem;
 }
 
-/* ANIMATION */
-.animate {
-  animation-duration: 0.75s;
-  animation-delay: 0.5s;
-  animation-name: animate-fade;
-  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
-  animation-fill-mode: backwards;
+.benefits .design {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  display: block;
+  width: 35px;
+  height: 120px;
+  background-color: var(--color-primary);
+  opacity: 0.95;
 }
-
-.animate.slide {
-  animation-name: animate-slide;
-}
-@keyframes animate-slide {
-  0% {
-    opacity: 0;
-    transform: translate(0, 20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
-.animate.glow {
-  animation-name: animate-glow;
-  animation-timing-function: ease;
-}
-
-@keyframes animate-glow {
-  0% {
-    opacity: 0;
-    filter: brightness(3) saturate(3);
-    transform: scale(0.8, 0.8);
-  }
-  100% {
-    opacity: 1;
-    filter: brightness(1) saturate(1);
-    transform: scale(1, 1);
-  }
+.benefits .design::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: 20px;
+  display: block;
+  width: 40px;
+  height: 120px;
+  background-color: var(--color-primary);
 }

@@ -3,6 +3,8 @@
   padding: 1rem;
 }
 .contact h2 {
+  position: relative;
+  z-index: 5;
   font-size: 2rem;
   color: var(--color-dark);
   padding: 2rem 0 1rem 0;
