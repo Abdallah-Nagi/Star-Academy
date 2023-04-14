@@ -13,7 +13,9 @@ function Contact() {
         <input type="text" placeholder="Name" />
         <input type="email" placeholder="Email" />
         <textarea rows="4" cols="50" placeholder="Message"></textarea>
-        <button>Submit</button>
+        <div className="btn-container">
+          <a className="btn btn-contact">Submit</a>
+        </div>
       </form>
     </section>
   );

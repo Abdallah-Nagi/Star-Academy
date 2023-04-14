@@ -16,7 +16,7 @@ function Introduction() {
         exams questions to ease the exam for our studnets.
       </p>
       <div className="btn-container">
-        <button className="btn btn-introduction">View courses</button>
+        <a className="btn btn-introduction">View courses</a>
       </div>
     </section>
   );

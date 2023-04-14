@@ -34,7 +34,7 @@ function About() {
         topic to solidify the topics being taught.
         <span> Try any of our courses free of charge.</span>
         <div className="btn-container">
-          <button className="btn btn-about">Try Our Courses</button>
+          <a className="btn btn-about">Try Our Courses</a>
         </div>
       </p>
     </section>
