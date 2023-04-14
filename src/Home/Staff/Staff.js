@@ -55,7 +55,6 @@ function Staff() {
         </AnimationOnScroll>
       </div>
       <span className="design-star-bottom"></span>
-      <span className="design-star-top"></span>
     </section>
   );
 }
