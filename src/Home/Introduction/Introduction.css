@@ -21,27 +21,11 @@ h1 {
   color: var(--color-primary);
   font-weight: bold;
 }
-.introduction-btn-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 3rem;
-}
-.introduction-btn-container .btn {
-  width: 200px;
-  height: 50px;
-  border-radius: 20px;
-  margin: 0 auto 1rem auto;
-  font-family: "Poppins", sans-serif;
-  cursor: pointer;
-  border: none;
+
+.btn-introduction {
   background-color: var(--color-secondary);
   color: var(--color-black);
-  font-weight: bold;
-  font-size: 1rem;
 }
-.introduction-btn-container .btn:hover {
+.btn-introduction:hover {
   background-color: var(--color-secondary-light);
 }

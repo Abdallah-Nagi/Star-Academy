@@ -3,10 +3,10 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
 }
 :root {
   --color-primary: #daa520;
@@ -17,4 +17,22 @@ body {
   --color-light: #f8f9ff;
   --color-black: black;
   --color-dark: #36454f;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+.btn-container .btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
 }

@@ -15,8 +15,8 @@ function Introduction() {
         tutoring of the curriculum but also focus on solving myriad of previous
         exams questions to ease the exam for our studnets.
       </p>
-      <div className="introduction-btn-container">
-        <button className="btn">View courses</button>
+      <div className="btn-container">
+        <button className="btn btn-introduction">View courses</button>
       </div>
     </section>
   );
