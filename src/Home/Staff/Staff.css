@@ -78,7 +78,7 @@
   display: block;
   width: 35px;
   height: 120px;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
   opacity: 0.95;
 }
 .benefits .design::after {
@@ -89,30 +89,64 @@
   display: block;
   width: 40px;
   height: 120px;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
 
 .staff .design-top {
   position: absolute;
-  top: -33px;
-  left: 0;
+  top: -25px;
+  right: 0;
   display: block;
   width: 25px;
   height: 120px;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
   opacity: 0.95;
 }
 .staff .design-top::after {
   content: "";
   position: absolute;
-  top: 40px;
-  right: -25px;
+  top: 0px;
+  right: 25px;
   display: block;
   width: 25px;
   height: 80px;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
 .staff .design-top::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  display: block;
+  width: 25px;
+  height: 40px;
+  background-color: var(--color-secondary);
+}
+
+.staff .design-bottom {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  display: block;
+  width: 25px;
+  height: 120px;
+  background-color: var(--color-secondary);
+  opacity: 0.95;
+}
+
+.staff .design-bottom::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 25px;
+  display: block;
+  width: 25px;
+  height: 80px;
+  background-color: var(--color-secondary);
+}
+
+.staff .design-bottom::before {
   content: "";
   position: absolute;
   top: 80px;
@@ -120,5 +154,5 @@
   display: block;
   width: 25px;
   height: 40px;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
