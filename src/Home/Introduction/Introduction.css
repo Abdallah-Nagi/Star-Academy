@@ -1,9 +1,15 @@
 .introduction {
+  position: relative;
   background-color: var(--color-black);
   margin-top: 6rem;
 }
 
-h1 {
+.intro-container {
+  position: relative;
+  z-index: 4;
+}
+
+.introduction h1 {
   font-size: 2rem;
   color: var(--color-white);
   padding: 1rem 1rem 0 1rem;
@@ -16,6 +22,8 @@ h1 {
   color: var(--color-white);
   text-align: justify;
   padding: 1rem;
+  max-width: 800px;
+  margin: auto;
 }
 .introduction p span {
   color: var(--color-primary);
@@ -28,4 +36,99 @@ h1 {
 }
 .btn-introduction:hover {
   background-color: var(--color-secondary-light);
+}
+
+.star-logo {
+  display: none;
+}
+.star-one,
+.star-two,
+.star-three {
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .intro-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    padding: 2rem;
+  }
+  .introduction h1 {
+    font-size: 3rem;
+  }
+  .introduction p {
+    padding-left: 0;
+  }
+  .introduction .btn-container {
+    align-items: flex-start;
+  }
+  .introduction .btn-container .btn {
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+  }
+  .introduction .large-scr {
+    display: block;
+  }
+  .star-logo {
+    display: block;
+    font-size: 15rem;
+    color: var(--color-primary);
+  }
+  .star-one {
+    display: block;
+    position: absolute;
+    bottom: -33%;
+    right: 15%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .intro-container {
+    max-width: 1000px;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "title title"
+      "paragraph star"
+      "button star";
+  }
+  .introduction h1 {
+    grid-area: title;
+    text-align: left;
+    padding-left: 0;
+  }
+  .introduction p {
+    grid-area: paragraph;
+    text-align: left;
+    margin-left: 0;
+    max-width: 600px;
+  }
+  .star-logo {
+    display: block;
+    grid-area: star;
+    font-size: 15rem;
+    color: var(--color-primary);
+    align-items: center;
+  }
+  .star-one,
+  .star-two,
+  .star-three {
+    position: absolute;
+    display: block;
+  }
+  .star-one {
+    top: 0;
+    right: 7%;
+  }
+  .star-two {
+    right: 3%;
+  }
+  .star-three {
+    right: 15%;
+    bottom: -5%;
+  }
 }
