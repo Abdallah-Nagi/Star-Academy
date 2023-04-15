@@ -16,26 +16,51 @@ function Nav() {
     <>
       <nav>
         <ul className="nav-list">
-          <li className="nav-item nav-icon">
+          <li className="nav-item nav-icon small-scr">
             <a href="#">
               <span className="icon">
                 <BsFillPersonFill />
               </span>
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item nav-logo">
             <a href="#" className="brand-logo">
               <span className="logo"></span>
               <span className="name">Academy</span>
             </a>
           </li>
-          <li className="nav-item nav-icon">
+          <li className="nav-item nav-icon small-scr">
             <a href="#" onClick={handleMenu}>
               <span className="icon">
                 <RxHamburgerMenu />
               </span>
             </a>
           </li>
+          <div className="medium-scr links-container between">
+            <li className="nav-item text medium-scr">
+              <a href="#">Home</a>
+            </li>
+            <li className="nav-item text medium-scr">
+              <a href="#">Courses</a>
+            </li>
+            <li className="nav-item text medium-scr">
+              <a href="#">About</a>
+            </li>
+            <li className="nav-item text large-scr">
+              <a href="#">Staff</a>
+            </li>
+          </div>
+          <div className="medium-scr links-container">
+            <li className="nav-item text medium-scr">
+              <span className="medium-scr line"></span>
+              <a href="#">
+                <span>Login</span>
+              </a>
+              <a className="btn" href="#">
+                <span>Sign up</span>
+              </a>
+            </li>
+          </div>
         </ul>
       </nav>
       <div className={`full-menu ${openMenu ? "open" : "close"}`}>

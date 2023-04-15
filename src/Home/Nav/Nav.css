@@ -16,12 +16,17 @@ nav {
 .nav-list {
   height: 4rem;
   width: 100%;
-  max-width: 500px;
+  /* max-width: 500px; */
   margin: auto;
   display: flex;
   list-style-type: none;
   justify-content: space-between;
   align-items: center;
+}
+
+.medium-scr,
+.large-scr {
+  display: none;
 }
 
 a {
@@ -162,4 +167,79 @@ a {
   border-left: 1em solid transparent;
   transform: rotate(-70deg);
   content: "";
+}
+
+@media screen and (max-width: 360px) {
+  .brand-logo .name {
+    font-size: 2rem;
+  }
+  .brand-logo .logo {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .nav-list {
+    max-width: 1200px;
+  }
+  .brand-logo .name {
+    font-size: 4rem;
+  }
+  .brand-logo .logo {
+    font-size: 2rem;
+  }
+  .small-scr {
+    display: none;
+  }
+  .medium-scr {
+    display: initial;
+  }
+  .links-container {
+    margin-bottom: -20px;
+  }
+
+  .links-container.between .text {
+    opacity: 0.85;
+  }
+  .links-container.between .text:hover {
+    opacity: 1;
+  }
+
+  .nav-item a {
+    font-size: 1rem;
+    color: var(--color-dark);
+  }
+  .nav-item a:hover {
+    color: var(--color-primary);
+  }
+
+  .line {
+    display: block;
+    position: absolute;
+    margin-right: 10px;
+    width: 1px;
+    height: 25%;
+    top: 50%;
+    background-color: var(--color-dark);
+    opacity: 0.5;
+  }
+  .nav-item .btn {
+    background: var(--color-primary);
+    border-radius: 20px;
+    margin-left: 10px;
+    color: var(--color-black);
+    transition: all 0.5s;
+  }
+  .nav-item .btn:hover {
+    opacity: 0.8;
+    color: var(--color-black);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .large-scr {
+    display: initial;
+  }
+  .links-container.between .nav-item:not(:last-child) {
+    margin-right: 1rem;
+  }
 }
