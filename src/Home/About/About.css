@@ -65,7 +65,7 @@
   height: 100px;
   border-radius: 50%;
   background-color: var(--color-secondary-light);
-  opacity: 0.2;
+  opacity: 0.4;
   position: absolute;
   left: 50%;
   top: 59px;
@@ -137,4 +137,92 @@
 
 .btn-about:hover {
   background-color: var(--color-secondary-light);
+}
+
+@media screen and (min-width: 750px) {
+  .title-icon .design-main {
+    font-size: 15rem;
+  }
+  .title-icon .design-secondary.one {
+    font-size: 3rem;
+    left: calc(50% + 6rem);
+  }
+  .title-icon .design-secondary.two {
+    font-size: 4rem;
+    left: calc(50% + 5.5rem);
+    bottom: calc(50% - 6rem);
+  }
+  .title-icon .design-secondary.three {
+    font-size: 5rem;
+    left: calc(50% - 11rem);
+    bottom: calc(50% - 6rem);
+  }
+  .title-icon .design-secondary.four {
+    font-size: 7rem;
+    left: calc(50% - 10rem);
+    bottom: calc(50% + 0.5rem);
+  }
+  .title-icon .design-secondary.four::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top: 269px;
+    width: 365px;
+    height: 4px;
+    background-color: var(--color-dark);
+    opacity: 0.25;
+  }
+  .title-icon .design-secondary.five {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--color-secondary-light);
+    opacity: 0.4;
+    position: absolute;
+    left: 47%;
+    top: 67px;
+    z-index: 3;
+  }
+  .about-paragraph {
+    font-size: 1.25rem;
+    padding: 0 4rem 2rem 4rem;
+    margin-top: -3rem;
+  }
+  .about .btn.btn-about {
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas:
+      "icon paragraph"
+      "icon paragraph";
+    padding: 5rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .about .title-icon {
+    grid-area: icon;
+    padding: 0;
+    margin: 0;
+  }
+  .about .about-paragraph {
+    grid-area: paragraph;
+    margin: 0;
+    padding: 0;
+    padding-left: 5rem;
+  }
+  .star-icon {
+    right: -75%;
+  }
+  .about .btn-container {
+    align-items: flex-start;
+  }
 }
