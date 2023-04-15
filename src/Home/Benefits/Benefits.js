@@ -171,7 +171,7 @@ function Benefits() {
           </p>
         </div>
       </AnimationOnScroll>
-      <span className="design"></span>
+      <span className="design-top"></span>
     </section>
   );
 }

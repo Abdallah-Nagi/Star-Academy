@@ -36,9 +36,9 @@
   font-size: 0.9rem;
 }
 
-.benefits .design {
+.benefits .design-top {
   position: absolute;
-  top: -50px;
+  top: 0;
   right: 0;
   display: block;
   width: 35px;
@@ -46,7 +46,7 @@
   background-color: var(--color-primary);
   opacity: 0.95;
 }
-.benefits .design::after {
+.benefits .design-top::after {
   content: "";
   position: absolute;
   top: -50px;
