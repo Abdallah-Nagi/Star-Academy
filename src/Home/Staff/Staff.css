@@ -1,11 +1,11 @@
 .staff {
   position: relative;
   background-color: var(--color-black);
-  padding: 3rem 1rem 3rem 1rem;
+  padding: 5rem 1rem 5rem 1rem;
 }
 
 .staff .btn-container {
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 .btn-staff {
   position: relative;
@@ -162,6 +162,12 @@ swiper-container {
 }
 
 @media screen and (min-width: 750px) {
+  .staff .btn.btn-staff {
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+  }
   .staff .design-top {
     position: absolute;
     top: -15px;
@@ -222,5 +228,22 @@ swiper-container {
     width: 123px;
     height: 145px;
     top: 55px;
+  }
+  .staff .design-star-bottom {
+    height: 130px;
+    bottom: -218px;
+    right: 120px;
+  }
+  .staff .design-star-bottom::before {
+    height: 130px;
+  }
+  .staff .design-star-bottom::after {
+    height: 130px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .staff .design-star-bottom {
+    bottom: -85px;
   }
 }

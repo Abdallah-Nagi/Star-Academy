@@ -114,11 +114,12 @@
     grid-template-areas:
       "header header header"
       "col-1 star col-2";
-    padding: 1rem;
-    max-width: 1200px;
+    padding: 1rem 2rem;
+    max-width: 1000px;
     margin: auto;
   }
   .benefits h2 {
+    font-size: 2.5rem;
     grid-area: header;
   }
   .benefits .col-1 {
