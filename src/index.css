@@ -17,6 +17,8 @@ body {
   --color-light: #f8f9ff;
   --color-black: black;
   --color-dark: #36454f;
+  --swiper-theme-color: var(--color-primary);
+  --swiper-pagination-bullet-inactive-color: white;
 }
 .btn-container {
   display: flex;

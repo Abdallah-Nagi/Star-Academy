@@ -156,3 +156,71 @@
   height: 40px;
   background-color: var(--color-secondary);
 }
+
+swiper-container {
+  max-width: 750px;
+}
+
+@media screen and (min-width: 750px) {
+  .staff .design-top {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    display: block;
+    width: 84px;
+    height: 200px;
+    background-color: var(--color-dark);
+    opacity: 0.95;
+  }
+  .staff .design-top::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    display: block;
+    width: 123px;
+    height: 145px;
+    background-color: var(--color-dark);
+  }
+  .staff .design-top::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 164px;
+    display: block;
+    width: 78px;
+    height: 79px;
+    background-color: var(--color-dark);
+  }
+
+  .staff .design-bottom {
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    display: block;
+    width: 84px;
+    height: 200px;
+    background-color: var(--color-dark);
+    opacity: 0.95;
+  }
+  .staff .design-bottom::before {
+    content: "";
+    position: absolute;
+    top: 121px;
+    left: 181px;
+    display: block;
+    width: 78px;
+    height: 79px;
+    background-color: var(--color-dark);
+  }
+  .staff .design-bottom::after {
+    content: "";
+    position: absolute;
+    left: 58px;
+    display: block;
+    background-color: var(--color-dark);
+    width: 123px;
+    height: 145px;
+    top: 55px;
+  }
+}
