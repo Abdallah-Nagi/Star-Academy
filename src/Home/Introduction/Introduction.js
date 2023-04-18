@@ -3,7 +3,7 @@ import "./Introduction.css";
 import { WiStars } from "react-icons/wi";
 function Introduction() {
   return (
-    <section className="introduction">
+    <section id="introduction" className="introduction">
       <div className="intro-container">
         <h1>
           Your Road to

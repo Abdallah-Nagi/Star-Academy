@@ -6,7 +6,7 @@ import { AiFillPieChart, AiOutlineLineChart } from "react-icons/ai";
 
 function About() {
   return (
-    <section className="about">
+    <section id="about" className="about">
       <div className="about-container">
         <div className="title-icon">
           <span className="design-main">

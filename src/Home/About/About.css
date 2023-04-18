@@ -204,7 +204,7 @@
     grid-template-areas:
       "icon paragraph"
       "icon paragraph";
-    padding: 5rem;
+    padding: 7rem 4rem;
     max-width: 1200px;
     margin: auto;
   }

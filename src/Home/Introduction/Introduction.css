@@ -88,7 +88,7 @@
 @media screen and (min-width: 1024px) {
   .intro-container {
     max-width: 1000px;
-    padding: 3rem;
+    padding: 5rem 3rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
@@ -128,7 +128,7 @@
     right: 3%;
   }
   .star-three {
-    right: 15%;
-    bottom: -5%;
+    right: 16%;
+    bottom: 10%;
   }
 }

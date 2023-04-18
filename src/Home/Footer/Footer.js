@@ -31,7 +31,7 @@ function Footer() {
             </a>
           </div>
           <div className="link-container">
-            <a href="#">
+            <a href="#staff">
               <MdGroups className="icon" />
               Staff
             </a>
@@ -43,7 +43,7 @@ function Footer() {
             </a>
           </div>
           <div className="link-container">
-            <a href="#">
+            <a href="#contact">
               <AiOutlineMail className="icon" />
               Contact
             </a>

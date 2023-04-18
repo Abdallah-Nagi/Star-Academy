@@ -10,7 +10,6 @@ function Nav() {
   const [openMenu, setOpenMenu] = useState(false);
   const handleMenu = () => {
     setOpenMenu((prev) => !prev);
-    console.log(openMenu);
   };
   return (
     <>
@@ -44,10 +43,10 @@ function Nav() {
               <a href="#">Courses</a>
             </li>
             <li className="nav-item text medium-scr">
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </li>
             <li className="nav-item text large-scr">
-              <a href="#">Staff</a>
+              <a href="#staff">Staff</a>
             </li>
           </div>
           <div className="medium-scr links-container">
@@ -80,7 +79,7 @@ function Nav() {
         <section>
           <ul className="full-menu-body-list">
             <li className="full-menu-body-item">
-              <a href="#">
+              <a href="#" onClick={handleMenu}>
                 <span className="full-menu-body-icon">
                   <AiOutlineHome />
                 </span>
@@ -88,7 +87,7 @@ function Nav() {
               </a>
             </li>
             <li className="full-menu-body-item">
-              <a href="#">
+              <a href="#" onClick={handleMenu}>
                 <span className="full-menu-body-icon">
                   <FaBook />
                 </span>
@@ -96,7 +95,7 @@ function Nav() {
               </a>
             </li>
             <li className="full-menu-body-item">
-              <a href="#">
+              <a href="#staff" onClick={handleMenu}>
                 <span className="full-menu-body-icon">
                   <MdGroups />
                 </span>
@@ -104,7 +103,7 @@ function Nav() {
               </a>
             </li>
             <li className="full-menu-body-item">
-              <a href="#">
+              <a href="#" onClick={handleMenu}>
                 <span className="full-menu-body-icon">
                   <BsFillPersonFill />
                 </span>

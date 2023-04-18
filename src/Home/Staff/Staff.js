@@ -10,7 +10,7 @@ function Staff() {
   const swiperElRef = useRef(null);
 
   return (
-    <section className="staff">
+    <section id="staff" className="staff">
       <div className="btn-container">
         <a className="btn btn-staff">Learn from the best!</a>
       </div>
