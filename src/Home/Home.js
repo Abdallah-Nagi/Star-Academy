@@ -10,7 +10,6 @@ import Footer from "./Footer/Footer";
 function Home() {
   return (
     <main>
-      <Nav />
       <Introduction />
       <About />
       <Benefits />
