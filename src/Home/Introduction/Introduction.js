@@ -1,6 +1,7 @@
 import React from "react";
 import "./Introduction.css";
 import { WiStars } from "react-icons/wi";
+import { Link } from "react-router-dom";
 function Introduction() {
   return (
     <section id="introduction" className="introduction">
@@ -18,7 +19,9 @@ function Introduction() {
           previous exams questions to ease the exam for our studnets.
         </p>
         <div className="btn-container">
-          <a className="btn btn-introduction">View courses</a>
+          <Link to="courses" className="btn btn-introduction">
+            View courses
+          </Link>
         </div>
         <div className="star-logo">
           <div className="star-one">

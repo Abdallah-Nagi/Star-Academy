@@ -3,6 +3,7 @@ import "./About.css";
 import { TbCertificate } from "react-icons/tb";
 import { GoVerified } from "react-icons/go";
 import { AiFillPieChart, AiOutlineLineChart } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -35,7 +36,9 @@ function About() {
           questions following each topic to solidify the topics being taught.
           <span> Try any of our courses free of charge.</span>
           <div className="btn-container">
-            <a className="btn btn-about">Try Our Courses</a>
+            <Link to="courses" className="btn btn-about">
+              Try For Free
+            </Link>
           </div>
         </p>
       </div>

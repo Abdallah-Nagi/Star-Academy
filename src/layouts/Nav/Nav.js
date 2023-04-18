@@ -2,9 +2,14 @@ import React, { useState } from "react";
 import "./Nav.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { BsFillPersonFill } from "react-icons/bs";
-import { AiOutlineClose, AiOutlineHome } from "react-icons/ai";
+import {
+  AiOutlineClose,
+  AiOutlineHome,
+  AiOutlineShoppingCart,
+} from "react-icons/ai";
 import { FaBook } from "react-icons/fa";
-import { MdGroups } from "react-icons/md";
+import { Link } from "react-router-dom";
+// react router
 
 function Nav() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -16,37 +21,37 @@ function Nav() {
       <nav>
         <ul className="nav-list">
           <li className="nav-item nav-icon small-scr">
-            <a href="#">
+            <Link to="account">
               <span className="icon">
                 <BsFillPersonFill />
               </span>
-            </a>
+            </Link>
           </li>
           <li className="nav-item nav-logo">
-            <a href="#" className="brand-logo">
+            <Link to="/" className="brand-logo">
               <span className="logo"></span>
               <span className="name">Academy</span>
-            </a>
+            </Link>
           </li>
           <li className="nav-item nav-icon small-scr">
-            <a href="#" onClick={handleMenu}>
+            <button onClick={handleMenu}>
               <span className="icon">
                 <RxHamburgerMenu />
               </span>
-            </a>
+            </button>
           </li>
           <div className="medium-scr links-container between">
             <li className="nav-item text medium-scr">
-              <a href="#">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li className="nav-item text medium-scr">
-              <a href="#">Courses</a>
+              <Link to="courses">Courses</Link>
             </li>
             <li className="nav-item text medium-scr">
-              <a href="#about">About</a>
+              <Link to="account">Account</Link>
             </li>
-            <li className="nav-item text large-scr">
-              <a href="#staff">Staff</a>
+            <li className="nav-item text medium-scr">
+              <Link to="cart">Cart</Link>
             </li>
           </div>
           <div className="medium-scr links-container">
@@ -66,10 +71,10 @@ function Nav() {
         <header className="full-menu-nav">
           <ul className="full-menu-nav-list">
             <li className="full-menu-nav-item">
-              <a href="#" className="brand-logo">
+              <Link to="/" onClick={handleMenu} className="brand-logo">
                 <span className="logo"></span>
                 <span className="name">Academy</span>
-              </a>
+              </Link>
             </li>
             <li className="full-menu-nav-item icon" onClick={handleMenu}>
               <AiOutlineClose />
@@ -79,36 +84,36 @@ function Nav() {
         <section>
           <ul className="full-menu-body-list">
             <li className="full-menu-body-item">
-              <a href="#" onClick={handleMenu}>
+              <Link to="/" onClick={handleMenu}>
                 <span className="full-menu-body-icon">
                   <AiOutlineHome />
                 </span>
                 <span className="full-menu-body-text">Home</span>
-              </a>
+              </Link>
             </li>
             <li className="full-menu-body-item">
-              <a href="#" onClick={handleMenu}>
+              <Link to="courses" onClick={handleMenu}>
                 <span className="full-menu-body-icon">
                   <FaBook />
                 </span>
                 <span className="full-menu-body-text">Courses</span>
-              </a>
+              </Link>
             </li>
             <li className="full-menu-body-item">
-              <a href="#staff" onClick={handleMenu}>
-                <span className="full-menu-body-icon">
-                  <MdGroups />
-                </span>
-                <span className="full-menu-body-text">Staff</span>
-              </a>
-            </li>
-            <li className="full-menu-body-item">
-              <a href="#" onClick={handleMenu}>
+              <Link to="account" onClick={handleMenu}>
                 <span className="full-menu-body-icon">
                   <BsFillPersonFill />
                 </span>
                 <span className="full-menu-body-text">Account</span>
-              </a>
+              </Link>
+            </li>
+            <li className="full-menu-body-item">
+              <Link to="cart" onClick={handleMenu}>
+                <span className="full-menu-body-icon">
+                  <AiOutlineShoppingCart />
+                </span>
+                <span className="full-menu-body-text">Cart</span>
+              </Link>
             </li>
           </ul>
         </section>

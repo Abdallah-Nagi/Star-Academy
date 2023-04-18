@@ -2,14 +2,14 @@ import React from "react";
 import "./Footer.css";
 import {
   AiOutlineHome,
-  AiOutlineMail,
+  AiOutlineShoppingCart,
   AiFillFacebook,
   AiFillLinkedin,
   AiFillTwitterCircle,
 } from "react-icons/ai";
 import { FaBook } from "react-icons/fa";
-import { MdGroups } from "react-icons/md";
 import { BsFillPersonFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -19,34 +19,28 @@ function Footer() {
         <div className="info">
           <h4>Info</h4>
           <div className="link-container">
-            <a href="#">
+            <Link to="/" href="#">
               <AiOutlineHome className="icon" />
               Home
-            </a>
+            </Link>
           </div>
           <div className="link-container">
-            <a href="#">
+            <Link to="courses" href="#">
               <FaBook className="icon" />
               Courses
-            </a>
+            </Link>
           </div>
           <div className="link-container">
-            <a href="#staff">
-              <MdGroups className="icon" />
-              Staff
-            </a>
-          </div>
-          <div className="link-container">
-            <a href="#">
+            <Link to="account" href="#">
               <BsFillPersonFill className="icon" />
               Account
-            </a>
+            </Link>
           </div>
           <div className="link-container">
-            <a href="#contact">
-              <AiOutlineMail className="icon" />
-              Contact
-            </a>
+            <Link to="cart">
+              <AiOutlineShoppingCart className="icon" />
+              Cart
+            </Link>
           </div>
         </div>
         <div className="links">

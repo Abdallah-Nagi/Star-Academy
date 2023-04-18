@@ -67,7 +67,7 @@
   height: 100px;
 }
 
-.btn-contact {
+.btn-container .btn-contact.btn {
   background-color: var(--color-dark);
   color: var(--color-white);
 }

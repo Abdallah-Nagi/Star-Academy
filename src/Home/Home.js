@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "./Nav/Nav";
+import Nav from "../layouts/Nav/Nav";
 import Introduction from "./Introduction/Introduction";
 import About from "./About/About";
 import Benefits from "./Benefits/Benefits";

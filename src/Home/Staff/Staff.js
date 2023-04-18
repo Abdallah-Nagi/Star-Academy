@@ -4,6 +4,7 @@ import "./Staff.css";
 import profile from "../../../src/assets/profile.jpg";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { register } from "swiper/element/bundle";
+import { Link } from "react-router-dom";
 // register Swiper custom elements
 register();
 function Staff() {
@@ -12,7 +13,9 @@ function Staff() {
   return (
     <section id="staff" className="staff">
       <div className="btn-container">
-        <a className="btn btn-staff">Learn from the best!</a>
+        <Link to="courses" className="btn btn-staff">
+          Learn from the best!
+        </Link>
       </div>
       <div className="staff-container">
         <AnimationOnScroll
