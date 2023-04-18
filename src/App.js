@@ -2,6 +2,7 @@ import {
   Route,
   RouterProvider,
   createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
 } from "react-router-dom";
 
@@ -15,7 +16,7 @@ import RootLayout from "./layouts/RootLayout";
 // Scroll to top
 import ScrollToTop from "./helpers/ScrollToTop";
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
