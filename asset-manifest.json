@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Star-Academy/static/css/main.0aa0ee31.css",
-    "main.js": "/Star-Academy/static/js/main.203b65c7.js",
+    "main.css": "/Star-Academy/static/css/main.8109afc4.css",
+    "main.js": "/Star-Academy/static/js/main.2d164800.js",
     "static/js/787.28cb0dcd.chunk.js": "/Star-Academy/static/js/787.28cb0dcd.chunk.js",
     "static/media/biology.jpg": "/Star-Academy/static/media/biology.0e66324e41ed57f93201.jpg",
     "static/media/profile.jpg": "/Star-Academy/static/media/profile.d790607301705bdabf97.jpg",
     "index.html": "/Star-Academy/index.html",
-    "main.0aa0ee31.css.map": "/Star-Academy/static/css/main.0aa0ee31.css.map",
-    "main.203b65c7.js.map": "/Star-Academy/static/js/main.203b65c7.js.map",
+    "main.8109afc4.css.map": "/Star-Academy/static/css/main.8109afc4.css.map",
+    "main.2d164800.js.map": "/Star-Academy/static/js/main.2d164800.js.map",
     "787.28cb0dcd.chunk.js.map": "/Star-Academy/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0aa0ee31.css",
-    "static/js/main.203b65c7.js"
+    "static/css/main.8109afc4.css",
+    "static/js/main.2d164800.js"
   ]
 }
