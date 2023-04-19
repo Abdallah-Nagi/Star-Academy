@@ -6,7 +6,7 @@ import Benefits from "./Benefits/Benefits";
 import Courses from "./Courses/Courses";
 import Staff from "./Staff/Staff";
 import Contact from "./Contact/Contact";
-import Footer from "./Footer/Footer";
+
 function Home() {
   return (
     <main>
@@ -16,7 +16,6 @@ function Home() {
       <Courses />
       <Staff />
       <Contact />
-      <Footer />
     </main>
   );
 }

@@ -47,27 +47,12 @@
   margin-top: 0.25rem;
 }
 
-.course-info .tutor {
+.tutor {
   display: flex;
   align-items: center;
   margin-bottom: 3px;
 }
 
-.course-info .tutor .name {
-  display: block;
-  font-size: 0.8rem;
-  color: var(--color-dark);
-  opacity: 0.8;
-}
-.course-info .tutor img {
-  display: block;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 3px;
-  border: 1px solid var(--color-dark);
-}
 .course-info .price {
   display: block;
   font-weight: bold;

@@ -1,0 +1,117 @@
+.main-courses {
+  margin-top: 110px;
+  padding: 1rem;
+}
+
+.search-container {
+  position: relative;
+  margin: auto;
+  width: 250px;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.search-input {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--color-light);
+  border-radius: 7px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
+  outline: 1px solid rgba(0, 0, 0, 0.05);
+  color: var(--color-black);
+}
+.search-input::placeholder {
+  color: rgba(0, 0, 0, 0.627);
+}
+
+.search-icon {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 0;
+  top: 4px;
+  color: var(--color-dark);
+}
+.search-icon:before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  right: 25px;
+  width: 2px;
+  height: 38px;
+  background-color: rgba(0, 0, 0, 0.106);
+}
+
+.main-courses-container {
+  margin: auto;
+  width: 90%;
+  max-width: 350px;
+}
+.main-course {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.main-courses-container .course-image {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.main-courses-container .course-description {
+  padding-left: 5px;
+  padding-right: 15px;
+}
+
+.main-courses-container .title {
+  font-size: 1.35rem;
+  margin-bottom: 5px;
+  width: 100%;
+  letter-spacing: 0.5px;
+}
+.main-courses-container .content-list {
+  font-size: 0.75rem;
+  margin-left: 1rem;
+  padding-left: 15px;
+  padding-top: 5px;
+  margin-bottom: 10px;
+}
+.main-courses-container .content-list h5 {
+  position: relative;
+  left: -20px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.main-courses-container .item span {
+  display: block;
+  position: relative;
+  left: -5px;
+  margin-bottom: 5px;
+}
+.main-courses-container .item::marker {
+  color: var(--color-dark);
+}
+
+.main-courses-container .price {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+}
+
+.main-courses-container .course-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-course-btn {
+  width: fit-content;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+.main-course-btn:last-child {
+  margin-bottom: 0;
+}

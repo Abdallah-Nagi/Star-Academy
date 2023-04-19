@@ -47,6 +47,22 @@ body {
   color: var(--color-black);
 }
 
+.tutor .name {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-dark);
+  opacity: 0.8;
+}
+.tutor img {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 3px;
+  border: 1px solid var(--color-dark);
+}
+
 .animate {
   animation-duration: 0.75s;
   animation-delay: 0.5s;
