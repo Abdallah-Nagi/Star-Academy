@@ -20,7 +20,9 @@ const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
-      <Route path="courses" element={<Courses />} />
+      <Route path="courses" element={<Courses />}>
+        <Route path=":name" />
+      </Route>
       <Route path="account" element={<Account />} />
       <Route path="cart" element={<Cart />} />
     </Route>

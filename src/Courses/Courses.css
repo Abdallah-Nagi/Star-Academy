@@ -8,7 +8,7 @@
   margin: auto;
   width: 250px;
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .search-input {
@@ -49,16 +49,25 @@
   max-width: 350px;
 }
 .main-course {
+  color: black;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   padding: 5px;
   margin-bottom: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.main-course:hover {
+  box-shadow: rgba(50, 50, 93, 0.593) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.557) 0px 1px 3px -1px;
 }
 
 .main-courses-container .course-image {
   display: block;
   width: 100%;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .main-courses-container .course-description {
@@ -84,6 +93,7 @@
   left: -20px;
   text-transform: uppercase;
   font-size: 0.7rem;
+  font-weight: 500;
 }
 
 .main-courses-container .item span {
@@ -93,7 +103,7 @@
   margin-bottom: 5px;
 }
 .main-courses-container .item::marker {
-  color: var(--color-dark);
+  color: #36454fa1;
 }
 
 .main-courses-container .price {
@@ -102,16 +112,17 @@
   font-weight: bold;
 }
 
-.main-courses-container .course-nav {
+.main-courses-container .course-links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
 }
 
 .main-course-btn {
-  width: fit-content;
   font-size: 0.8rem;
-  margin-bottom: 5px;
 }
-.main-course-btn:last-child {
-  margin-bottom: 0;
+.main-course-btn:hover {
+  font-size: 0.8rem;
+  font-weight: 500;
 }

@@ -1,0 +1,112 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Biology Cambridge O.L",
+      "price": 7500,
+      "teacher": {
+        "name": "Abdallah Nagy",
+        "subject": "Biology"
+      },
+      "content": {
+        "explain": {
+          "description": "10 chapters",
+          "duration": "10 hours & 25 minutes",
+          "videos": []
+        },
+        "classified": {
+          "description": "2010 -> 2023",
+          "duration": "5 hours & 5 minutes",
+          "videos": []
+        },
+        "previousExams": {
+          "description": "2010 -> 2023",
+          "duration": "10 hours & 5 minutes",
+          "videos": []
+        },
+        "flashCards": "100+"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Math Cambridge O.L",
+      "price": 7500,
+      "teacher": {
+        "name": "Nagy Darwish",
+        "subject": "Math"
+      },
+      "content": {
+        "explain": {
+          "description": "10 chapters",
+          "duration": "6 hours & 25 minutes",
+          "videos": []
+        },
+        "classified": {
+          "description": "2010 -> 2023",
+          "duration": "1 hours & 5 minutes",
+          "videos": []
+        },
+        "previousExams": {
+          "description": "2010 -> 2023",
+          "duration": "9 hours & 5 minutes",
+          "videos": []
+        },
+        "flashCards": "50+"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Human Biology Cambridge O.L",
+      "price": 7500,
+      "teacher": {
+        "name": "Abdallah Nagy",
+        "subject": "Biology"
+      },
+      "content": {
+        "explain": {
+          "description": "10 chapters",
+          "duration": "6 hours & 25 minutes",
+          "videos": []
+        },
+        "classified": {
+          "description": "2010 -> 2023",
+          "duration": "1 hours & 5 minutes",
+          "videos": []
+        },
+        "previousExams": {
+          "description": "2010 -> 2023",
+          "duration": "9 hours & 5 minutes",
+          "videos": []
+        },
+        "flashCards": "50+"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Human Biology Cambridge O.L",
+      "price": 7500,
+      "teacher": {
+        "name": "Abdallah Nagy",
+        "subject": "Biology"
+      },
+      "content": {
+        "explain": {
+          "description": "10 chapters",
+          "duration": "6 hours & 25 minutes",
+          "videos": []
+        },
+        "classified": {
+          "description": "2010 -> 2023",
+          "duration": "1 hours & 5 minutes",
+          "videos": []
+        },
+        "previousExams": {
+          "description": "2010 -> 2023",
+          "duration": "9 hours & 5 minutes",
+          "videos": []
+        },
+        "flashCards": "50+"
+      }
+    }
+  ]
+}
