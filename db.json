@@ -77,7 +77,7 @@
     {
       "id": 3,
       "courseImage": "https://images.pexels.com/photos/1366942/pexels-photo-1366942.jpeg?auto=compress&cs=tinysrgb&w=400",
-      "title": "Chemistry Biology Cambridge O.L",
+      "title": "Chemistry Cambridge O.L",
       "price": 7500.0,
       "teacher": {
         "name": "Abdallah Nagy",

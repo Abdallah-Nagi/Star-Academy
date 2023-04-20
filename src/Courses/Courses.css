@@ -6,9 +6,10 @@
 .search-container {
   position: relative;
   margin: auto;
-  width: 250px;
+  margin-bottom: 30px;
+  width: 90%;
+  max-width: 400px;
   display: flex;
-  margin-bottom: 20px;
 }
 
 .search-input {
@@ -45,17 +46,17 @@
 
 .main-courses-container {
   margin: auto;
-  width: 90%;
-  max-width: 350px;
 }
 .main-course {
+  padding-bottom: 5px;
   color: black;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  padding: 5px;
+  margin: auto;
   margin-bottom: 30px;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
+  max-width: 350px;
 }
 
 .main-course:hover {
@@ -66,14 +67,15 @@
 .main-courses-container .course-image {
   display: block;
   width: 100%;
+  max-height: 180px;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 15px 15px 5px 5px;
   border: none;
   margin: 0;
 }
 
 .main-courses-container .course-description {
-  padding-left: 5px;
+  padding-left: 10px;
   padding-right: 15px;
 }
 
@@ -127,4 +129,21 @@
 .main-course-btn:hover {
   font-size: 0.8rem;
   font-weight: 500;
+}
+
+@media screen and (min-width: 700px) {
+  .main-courses-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 850px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .main-courses-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 1150px;
+  }
 }
