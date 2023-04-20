@@ -10,26 +10,40 @@
         "subject": "Biology",
         "image": "../src/assets/profile.jpg"
       },
+      "includes": [
+        "Explanatory videos for each chapter",
+        "Solved classified questions (2010 -> 2023)",
+        "Flash Card questions for each chapter(100+)",
+        "Solved Previous exams (2010 -> 2023)"
+      ],
       "content": [
         {
-          "title": "explain",
-          "description": "Explanatory videos for each chapter",
-          "duration": "10 hours & 25 minutes",
-          "videos": []
+          "title": "Title of the first chapter",
+          "topics": [
+            {
+              "title": "Explanatory Video",
+              "video": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
         },
+
         {
+          "id": 11,
           "title": "classified",
           "description": "Solved classified questions (2010 -> 2023)",
           "duration": "5 hours & 5 minutes",
           "videos": []
         },
         {
+          "id": 20123,
           "title": "previousExams",
           "description": "Solved previous exams (2010 -> 2023)",
           "duration": "10 hours & 5 minutes",
           "videos": []
         },
         {
+          "id": 12,
           "title": "flashCards",
           "description": "Flash card questions for each chapter (100+)",
           "duration": "",
@@ -49,24 +63,28 @@
       },
       "content": [
         {
+          "id": 13,
           "title": "explain",
           "description": "Explanatory videos for each chapter",
           "duration": "10 hours & 25 minutes",
           "videos": []
         },
         {
+          "id": 14,
           "title": "classified",
           "description": "Solved classified questions (2010 -> 2023)",
           "duration": "5 hours & 5 minutes",
           "videos": []
         },
         {
+          "id": 15,
           "title": "previousExams",
           "description": "Solved previous exams (2010 -> 2023)",
           "duration": "10 hours & 5 minutes",
           "videos": []
         },
         {
+          "id": 16,
           "title": "flashCards",
           "description": "Flash card questions for each chapter (100+)",
           "duration": "",
@@ -86,24 +104,28 @@
       },
       "content": [
         {
+          "id": 17,
           "title": "explain",
           "description": "Explanatory videos for each chapter",
           "duration": "10 hours & 25 minutes",
           "videos": []
         },
         {
+          "id": 18,
           "title": "classified",
           "description": "Solved classified questions (2010 -> 2023)",
           "duration": "5 hours & 5 minutes",
           "videos": []
         },
         {
+          "id": 19,
           "title": "previousExams",
           "description": "Solved previous exams (2010 -> 2023)",
           "duration": "10 hours & 5 minutes",
           "videos": []
         },
         {
+          "id": 20,
           "title": "flashCards",
           "description": "Flash card questions for each chapter (100+)",
           "duration": "",
@@ -123,24 +145,28 @@
       },
       "content": [
         {
+          "id": 21,
           "title": "explain",
           "description": "Explanatory videos for each chapter",
           "duration": "10 hours & 25 minutes",
           "videos": []
         },
         {
+          "id": 22,
           "title": "classified",
           "description": "Solved classified questions (2010 -> 2023)",
           "duration": "5 hours & 5 minutes",
           "videos": []
         },
         {
+          "id": 23,
           "title": "previousExams",
           "description": "Solved previous exams (2010 -> 2023)",
           "duration": "10 hours & 5 minutes",
           "videos": []
         },
         {
+          "id": 24,
           "title": "flashCards",
           "description": "Flash card questions for each chapter (100+)",
           "duration": "",

@@ -4,8 +4,11 @@ import { AiOutlineSearch } from "react-icons/ai";
 import biologyImage from "../assets/biology.jpg";
 import profile from "../assets/profile.jpg";
 import { Link, useLoaderData } from "react-router-dom";
+import data from "../db.json";
 function Courses() {
-  const courses = useLoaderData();
+  // use as rest API
+  // const courses = useLoaderData();
+  const courses = data.courses;
   const [search, setSearch] = useState("");
   const [result, setResult] = useState([]);
   const handleSearch = (e) => {
@@ -38,7 +41,7 @@ function Courses() {
         <div className="main-courses-container">
           {result.map((course) => {
             return (
-              <Link>
+              <Link to={course.id.toString()} key={course.id}>
                 <div className="main-course">
                   <img className="course-image" src={course.courseImage} />
                   <div className="course-description">
@@ -49,9 +52,9 @@ function Courses() {
                     </div>
                     <ul className="content-list">
                       <h5>Includes:</h5>
-                      {course.content.map((content) => {
+                      {course.content.map((content, index) => {
                         return (
-                          <li className="item">
+                          <li className="item" key={index + 124134}>
                             <span>{content.description}</span>
                           </li>
                         );
