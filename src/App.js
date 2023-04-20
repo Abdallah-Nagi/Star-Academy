@@ -8,7 +8,7 @@ import {
 
 // pages
 import Home from "./Home/Home";
-import Courses from "./Courses/Courses";
+import Courses, { coursesLoader } from "./Courses/Courses";
 import Account from "./Account/Account";
 import Cart from "./Cart/Cart";
 // layouts
@@ -20,7 +20,7 @@ const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
-      <Route path="courses" element={<Courses />}>
+      <Route path="courses" element={<Courses />} loader={coursesLoader}>
         <Route path=":name" />
       </Route>
       <Route path="account" element={<Account />} />

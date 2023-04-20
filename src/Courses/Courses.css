@@ -12,14 +12,14 @@
 }
 
 .search-input {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem 0.5rem 1rem;
   border: none;
   background-color: var(--color-light);
   border-radius: 7px;
   font-family: "Poppins", sans-serif;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.294) 0px 2px 8px 0px;
   width: 100%;
-  outline: 1px solid rgba(0, 0, 0, 0.05);
+  outline: 2px solid rgba(0, 0, 0, 0.241);
   color: var(--color-black);
 }
 .search-input::placeholder {
@@ -68,6 +68,8 @@
   width: 100%;
   margin-bottom: 10px;
   border-radius: 5px;
+  border: none;
+  margin: 0;
 }
 
 .main-courses-container .course-description {

@@ -2,111 +2,151 @@
   "courses": [
     {
       "id": 1,
+      "courseImage": "https://images.pexels.com/photos/753271/pexels-photo-753271.jpeg",
       "title": "Biology Cambridge O.L",
-      "price": 7500,
+      "price": 7500.0,
       "teacher": {
         "name": "Abdallah Nagy",
-        "subject": "Biology"
+        "subject": "Biology",
+        "image": "../src/assets/profile.jpg"
       },
-      "content": {
-        "explain": {
-          "description": "10 chapters",
+      "content": [
+        {
+          "title": "explain",
+          "description": "Explanatory videos for each chapter",
           "duration": "10 hours & 25 minutes",
           "videos": []
         },
-        "classified": {
-          "description": "2010 -> 2023",
+        {
+          "title": "classified",
+          "description": "Solved classified questions (2010 -> 2023)",
           "duration": "5 hours & 5 minutes",
           "videos": []
         },
-        "previousExams": {
-          "description": "2010 -> 2023",
+        {
+          "title": "previousExams",
+          "description": "Solved previous exams (2010 -> 2023)",
           "duration": "10 hours & 5 minutes",
           "videos": []
         },
-        "flashCards": "100+"
-      }
+        {
+          "title": "flashCards",
+          "description": "Flash card questions for each chapter (100+)",
+          "duration": "",
+          "videos": []
+        }
+      ]
     },
     {
       "id": 2,
+      "courseImage": "https://images.pexels.com/photos/167682/pexels-photo-167682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "title": "Math Cambridge O.L",
-      "price": 7500,
+      "price": 7500.0,
       "teacher": {
         "name": "Nagy Darwish",
-        "subject": "Math"
+        "subject": "Math",
+        "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400"
       },
-      "content": {
-        "explain": {
-          "description": "10 chapters",
-          "duration": "6 hours & 25 minutes",
+      "content": [
+        {
+          "title": "explain",
+          "description": "Explanatory videos for each chapter",
+          "duration": "10 hours & 25 minutes",
           "videos": []
         },
-        "classified": {
-          "description": "2010 -> 2023",
-          "duration": "1 hours & 5 minutes",
+        {
+          "title": "classified",
+          "description": "Solved classified questions (2010 -> 2023)",
+          "duration": "5 hours & 5 minutes",
           "videos": []
         },
-        "previousExams": {
-          "description": "2010 -> 2023",
-          "duration": "9 hours & 5 minutes",
+        {
+          "title": "previousExams",
+          "description": "Solved previous exams (2010 -> 2023)",
+          "duration": "10 hours & 5 minutes",
           "videos": []
         },
-        "flashCards": "50+"
-      }
+        {
+          "title": "flashCards",
+          "description": "Flash card questions for each chapter (100+)",
+          "duration": "",
+          "videos": []
+        }
+      ]
     },
     {
       "id": 3,
-      "title": "Human Biology Cambridge O.L",
-      "price": 7500,
+      "courseImage": "https://images.pexels.com/photos/1366942/pexels-photo-1366942.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "title": "Chemistry Biology Cambridge O.L",
+      "price": 7500.0,
       "teacher": {
         "name": "Abdallah Nagy",
-        "subject": "Biology"
+        "subject": "Biology",
+        "image": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400"
       },
-      "content": {
-        "explain": {
-          "description": "10 chapters",
-          "duration": "6 hours & 25 minutes",
+      "content": [
+        {
+          "title": "explain",
+          "description": "Explanatory videos for each chapter",
+          "duration": "10 hours & 25 minutes",
           "videos": []
         },
-        "classified": {
-          "description": "2010 -> 2023",
-          "duration": "1 hours & 5 minutes",
+        {
+          "title": "classified",
+          "description": "Solved classified questions (2010 -> 2023)",
+          "duration": "5 hours & 5 minutes",
           "videos": []
         },
-        "previousExams": {
-          "description": "2010 -> 2023",
-          "duration": "9 hours & 5 minutes",
+        {
+          "title": "previousExams",
+          "description": "Solved previous exams (2010 -> 2023)",
+          "duration": "10 hours & 5 minutes",
           "videos": []
         },
-        "flashCards": "50+"
-      }
+        {
+          "title": "flashCards",
+          "description": "Flash card questions for each chapter (100+)",
+          "duration": "",
+          "videos": []
+        }
+      ]
     },
     {
       "id": 4,
-      "title": "Human Biology Cambridge O.L",
-      "price": 7500,
+      "courseImage": "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "title": "Business Cambridge O.L",
+      "price": 7500.0,
       "teacher": {
         "name": "Abdallah Nagy",
-        "subject": "Biology"
+        "subject": "Biology",
+        "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400"
       },
-      "content": {
-        "explain": {
-          "description": "10 chapters",
-          "duration": "6 hours & 25 minutes",
+      "content": [
+        {
+          "title": "explain",
+          "description": "Explanatory videos for each chapter",
+          "duration": "10 hours & 25 minutes",
           "videos": []
         },
-        "classified": {
-          "description": "2010 -> 2023",
-          "duration": "1 hours & 5 minutes",
+        {
+          "title": "classified",
+          "description": "Solved classified questions (2010 -> 2023)",
+          "duration": "5 hours & 5 minutes",
           "videos": []
         },
-        "previousExams": {
-          "description": "2010 -> 2023",
-          "duration": "9 hours & 5 minutes",
+        {
+          "title": "previousExams",
+          "description": "Solved previous exams (2010 -> 2023)",
+          "duration": "10 hours & 5 minutes",
           "videos": []
         },
-        "flashCards": "50+"
-      }
+        {
+          "title": "flashCards",
+          "description": "Flash card questions for each chapter (100+)",
+          "duration": "",
+          "videos": []
+        }
+      ]
     }
   ]
 }
