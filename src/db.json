@@ -19,12 +19,70 @@
       "content": [
         {
           "chapterNumber": 1,
-          "chapterName": "Kreb's Cycle",
+          "chapterName": "Classification",
           "chapterContent": [
             {
               "title": "Explanatory Video",
               "display": "",
-              "duration": "1 Hour & 40 Minuts"
+              "duration": "1 Hour & 40 Minuts",
+              "subContent": [
+                {
+                  "name": "Characteristics of Living Organisms",
+                  "timeStamp": "2:57"
+                },
+
+                {
+                  "name": "Classification of Living Organisms",
+                  "timeStamp": "6:20"
+                },
+
+                {
+                  "name": "Kingdoms of Living Organisms",
+                  "timeStamp": "12:57"
+                },
+
+                {
+                  "name": "Animal Kingdom",
+                  "timeStamp": "20:57",
+                  "subContent": [
+                    {
+                      "name": "Phylum Vetebrate",
+                      "timeStamp": "22:41"
+                    },
+                    {
+                      "name": "Phylum Arthropods",
+                      "timeStamp": "25:11"
+                    },
+                    {
+                      "name": "Annelids, Nematodes, Molluscus",
+                      "timeStamp": "27:20"
+                    }
+                  ]
+                },
+
+                {
+                  "name": "Plant Kingdom",
+                  "timeStamp": "29:57"
+                },
+
+                {
+                  "name": "Virus",
+                  "timeStamp": "35:32"
+                },
+
+                {
+                  "name": "Bacteria Kingdom",
+                  "timeStamp": "29:27"
+                },
+                {
+                  "name": "Fungi Kingdom",
+                  "timeStamp": "34:51"
+                },
+                {
+                  "name": "Dichotomus Keys",
+                  "timeStamp": "40:41"
+                }
+              ]
             },
             {
               "title": "Classified questions",
@@ -41,7 +99,7 @@
 
         {
           "chapterNumber": 2,
-          "chapterName": "Kreb's Cycle Number 2",
+          "chapterName": "Cells",
           "chapterContent": [
             {
               "title": "Explanatory Video",
@@ -63,7 +121,7 @@
 
         {
           "chapterNumber": 3,
-          "chapterName": "Kreb's Cycle Number 3",
+          "chapterName": "Enzymes",
           "chapterContent": [
             {
               "title": "Explanatory Video",
@@ -85,7 +143,7 @@
 
         {
           "chapterNumber": 4,
-          "chapterName": "Kreb's Cycle Number 4",
+          "chapterName": "Plant Nutrition",
           "chapterContent": [
             {
               "title": "Explanatory Video",
@@ -107,7 +165,7 @@
 
         {
           "chapterNumber": 5,
-          "chapterName": "Kreb's Cycle Number 5",
+          "chapterName": "Animal Nutrition",
           "chapterContent": [
             {
               "title": "Explanatory Video",
@@ -129,7 +187,7 @@
 
         {
           "chapterNumber": 6,
-          "chapterName": "Kreb's Cycle Number 6",
+          "chapterName": "Plant Transport",
           "chapterContent": [
             {
               "title": "Explanatory Video",
@@ -151,7 +209,7 @@
 
         {
           "chapterNumber": 7,
-          "chapterName": "Kreb's Cycle Number 7",
+          "chapterName": "Human Transport",
           "chapterContent": [
             {
               "title": "Explanatory Video",
@@ -173,7 +231,7 @@
 
         {
           "chapterNumber": 8,
-          "chapterName": "Kreb's Cycle Number 8",
+          "chapterName": "Respiration",
           "chapterContent": [
             {
               "title": "Explanatory Video",
@@ -195,7 +253,7 @@
 
         {
           "chapterNumber": 9,
-          "chapterName": "Kreb's Cycle Number 9",
+          "chapterName": "Coordination",
           "chapterContent": [
             {
               "title": "Explanatory Video",
@@ -217,7 +275,7 @@
 
         {
           "chapterNumber": 10,
-          "chapterName": "Kreb's Cycle Number 10",
+          "chapterName": "Excretion",
           "chapterContent": [
             {
               "title": "Explanatory Video",
@@ -239,7 +297,7 @@
 
         {
           "chapterNumber": 11,
-          "chapterName": "Kreb's Cycle Number 11",
+          "chapterName": "Homeostasis",
           "chapterContent": [
             {
               "title": "Explanatory Video",
@@ -261,7 +319,49 @@
 
         {
           "chapterNumber": 12,
-          "chapterName": "Kreb's Cycle Number 12",
+          "chapterName": "Reporduction",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+        {
+          "chapterNumber": 13,
+          "chapterName": "Inheritence",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+        {
+          "chapterNumber": 14,
+          "chapterName": "Ecosystem",
           "chapterContent": [
             {
               "title": "Explanatory Video",
