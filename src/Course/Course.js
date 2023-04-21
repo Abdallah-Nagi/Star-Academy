@@ -94,6 +94,7 @@ export default Course;
 
 export const singleCourseLoader = async ({ params }) => {
   const { id } = params;
-  const res = await fetch("http://localhost:4000/courses/" + id);
-  return res.json();
+  // const res = await fetch("http://localhost:4000/courses/" + id);
+  // return res.json();
+  return null;
 };

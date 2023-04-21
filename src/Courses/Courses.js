@@ -83,7 +83,8 @@ function Courses() {
 export default Courses;
 // loader function
 export const coursesLoader = async () => {
-  const res = await fetch("http://localhost:4000/courses");
+  // const res = await fetch("http://localhost:4000/courses");
   // loader will resolve promise
-  return res.json();
+  // return res.json();
+  return null;
 };
