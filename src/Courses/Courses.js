@@ -52,10 +52,10 @@ function Courses() {
                     </div>
                     <ul className="content-list">
                       <h5>Includes:</h5>
-                      {course.content.map((content, index) => {
+                      {course.includes.map((content, index) => {
                         return (
                           <li className="item" key={index + 124134}>
-                            <span>{content.description}</span>
+                            <span>{content}</span>
                           </li>
                         );
                       })}

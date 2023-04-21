@@ -18,36 +18,267 @@
       ],
       "content": [
         {
-          "title": "Title of the first chapter",
-          "topics": [
+          "chapterNumber": 1,
+          "chapterName": "Kreb's Cycle",
+          "chapterContent": [
             {
               "title": "Explanatory Video",
-              "video": "",
-              "duration": "1 Hour and 40 Minuts"
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
             }
           ]
         },
 
         {
-          "id": 11,
-          "title": "classified",
-          "description": "Solved classified questions (2010 -> 2023)",
-          "duration": "5 hours & 5 minutes",
-          "videos": []
+          "chapterNumber": 2,
+          "chapterName": "Kreb's Cycle Number 2",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
         },
+
         {
-          "id": 20123,
-          "title": "previousExams",
-          "description": "Solved previous exams (2010 -> 2023)",
-          "duration": "10 hours & 5 minutes",
-          "videos": []
+          "chapterNumber": 3,
+          "chapterName": "Kreb's Cycle Number 3",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
         },
+
         {
-          "id": 12,
-          "title": "flashCards",
-          "description": "Flash card questions for each chapter (100+)",
-          "duration": "",
-          "videos": []
+          "chapterNumber": 4,
+          "chapterName": "Kreb's Cycle Number 4",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 5,
+          "chapterName": "Kreb's Cycle Number 5",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 6,
+          "chapterName": "Kreb's Cycle Number 6",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 7,
+          "chapterName": "Kreb's Cycle Number 7",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 8,
+          "chapterName": "Kreb's Cycle Number 8",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 9,
+          "chapterName": "Kreb's Cycle Number 9",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 10,
+          "chapterName": "Kreb's Cycle Number 10",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 11,
+          "chapterName": "Kreb's Cycle Number 11",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 12,
+          "chapterName": "Kreb's Cycle Number 12",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
         }
       ]
     },
@@ -61,34 +292,275 @@
         "subject": "Math",
         "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400"
       },
+      "includes": [
+        "Explanatory videos for each chapter",
+        "Solved classified questions (2010 -> 2023)",
+        "Flash Card questions for each chapter(100+)",
+        "Solved Previous exams (2010 -> 2023)"
+      ],
       "content": [
         {
-          "id": 13,
-          "title": "explain",
-          "description": "Explanatory videos for each chapter",
-          "duration": "10 hours & 25 minutes",
-          "videos": []
+          "chapterNumber": 1,
+          "chapterName": "Kreb's Cycle",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
         },
+
         {
-          "id": 14,
-          "title": "classified",
-          "description": "Solved classified questions (2010 -> 2023)",
-          "duration": "5 hours & 5 minutes",
-          "videos": []
+          "chapterNumber": 2,
+          "chapterName": "Kreb's Cycle Number 2",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
         },
+
         {
-          "id": 15,
-          "title": "previousExams",
-          "description": "Solved previous exams (2010 -> 2023)",
-          "duration": "10 hours & 5 minutes",
-          "videos": []
+          "chapterNumber": 3,
+          "chapterName": "Kreb's Cycle Number 3",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
         },
+
         {
-          "id": 16,
-          "title": "flashCards",
-          "description": "Flash card questions for each chapter (100+)",
-          "duration": "",
-          "videos": []
+          "chapterNumber": 4,
+          "chapterName": "Kreb's Cycle Number 4",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 5,
+          "chapterName": "Kreb's Cycle Number 5",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 6,
+          "chapterName": "Kreb's Cycle Number 6",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 7,
+          "chapterName": "Kreb's Cycle Number 7",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 8,
+          "chapterName": "Kreb's Cycle Number 8",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 9,
+          "chapterName": "Kreb's Cycle Number 9",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 10,
+          "chapterName": "Kreb's Cycle Number 10",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 11,
+          "chapterName": "Kreb's Cycle Number 11",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 12,
+          "chapterName": "Kreb's Cycle Number 12",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
         }
       ]
     },
@@ -102,34 +574,281 @@
         "subject": "Biology",
         "image": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400"
       },
+      "includes": [
+        "Explanatory videos for each chapter",
+        "Solved classified questions (2010 -> 2023)",
+        "Flash Card questions for each chapter(100+)",
+        "Solved Previous exams (2010 -> 2023)"
+      ],
+      "includes": [
+        "Explanatory videos for each chapter",
+        "Solved classified questions (2010 -> 2023)",
+        "Flash Card questions for each chapter(100+)",
+        "Solved Previous exams (2010 -> 2023)"
+      ],
       "content": [
         {
-          "id": 17,
-          "title": "explain",
-          "description": "Explanatory videos for each chapter",
-          "duration": "10 hours & 25 minutes",
-          "videos": []
+          "chapterNumber": 1,
+          "chapterName": "Kreb's Cycle",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
         },
+
         {
-          "id": 18,
-          "title": "classified",
-          "description": "Solved classified questions (2010 -> 2023)",
-          "duration": "5 hours & 5 minutes",
-          "videos": []
+          "chapterNumber": 2,
+          "chapterName": "Kreb's Cycle Number 2",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
         },
+
         {
-          "id": 19,
-          "title": "previousExams",
-          "description": "Solved previous exams (2010 -> 2023)",
-          "duration": "10 hours & 5 minutes",
-          "videos": []
+          "chapterNumber": 3,
+          "chapterName": "Kreb's Cycle Number 3",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
         },
+
         {
-          "id": 20,
-          "title": "flashCards",
-          "description": "Flash card questions for each chapter (100+)",
-          "duration": "",
-          "videos": []
+          "chapterNumber": 4,
+          "chapterName": "Kreb's Cycle Number 4",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 5,
+          "chapterName": "Kreb's Cycle Number 5",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 6,
+          "chapterName": "Kreb's Cycle Number 6",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 7,
+          "chapterName": "Kreb's Cycle Number 7",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 8,
+          "chapterName": "Kreb's Cycle Number 8",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 9,
+          "chapterName": "Kreb's Cycle Number 9",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 10,
+          "chapterName": "Kreb's Cycle Number 10",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 11,
+          "chapterName": "Kreb's Cycle Number 11",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 12,
+          "chapterName": "Kreb's Cycle Number 12",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour & 40 Minuts"
+            }
+          ]
         }
       ]
     },
@@ -143,34 +862,282 @@
         "subject": "Biology",
         "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400"
       },
+
+      "includes": [
+        "Explanatory videos for each chapter",
+        "Solved classified questions (2010 -> 2023)",
+        "Flash Card questions for each chapter(100+)",
+        "Solved Previous exams (2010 -> 2023)"
+      ],
+      "includes": [
+        "Explanatory videos for each chapter",
+        "Solved classified questions (2010 -> 2023)",
+        "Flash Card questions for each chapter(100+)",
+        "Solved Previous exams (2010 -> 2023)"
+      ],
       "content": [
         {
-          "id": 21,
-          "title": "explain",
-          "description": "Explanatory videos for each chapter",
-          "duration": "10 hours & 25 minutes",
-          "videos": []
+          "chapterNumber": 1,
+          "chapterName": "Kreb's Cycle",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
         },
+
         {
-          "id": 22,
-          "title": "classified",
-          "description": "Solved classified questions (2010 -> 2023)",
-          "duration": "5 hours & 5 minutes",
-          "videos": []
+          "chapterNumber": 2,
+          "chapterName": "Kreb's Cycle Number 2",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
         },
+
         {
-          "id": 23,
-          "title": "previousExams",
-          "description": "Solved previous exams (2010 -> 2023)",
-          "duration": "10 hours & 5 minutes",
-          "videos": []
+          "chapterNumber": 3,
+          "chapterName": "Kreb's Cycle Number 3",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
         },
+
         {
-          "id": 24,
-          "title": "flashCards",
-          "description": "Flash card questions for each chapter (100+)",
-          "duration": "",
-          "videos": []
+          "chapterNumber": 4,
+          "chapterName": "Kreb's Cycle Number 4",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 5,
+          "chapterName": "Kreb's Cycle Number 5",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 6,
+          "chapterName": "Kreb's Cycle Number 6",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 7,
+          "chapterName": "Kreb's Cycle Number 7",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 8,
+          "chapterName": "Kreb's Cycle Number 8",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 9,
+          "chapterName": "Kreb's Cycle Number 9",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 10,
+          "chapterName": "Kreb's Cycle Number 10",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 11,
+          "chapterName": "Kreb's Cycle Number 11",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
+        },
+
+        {
+          "chapterNumber": 12,
+          "chapterName": "Kreb's Cycle Number 12",
+          "chapterContent": [
+            {
+              "title": "Explanatory Video",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Classified questions",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            },
+            {
+              "title": "Flash Cards",
+              "display": "",
+              "duration": "1 Hour and 40 Minuts"
+            }
+          ]
         }
       ]
     }
