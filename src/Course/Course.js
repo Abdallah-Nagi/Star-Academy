@@ -6,16 +6,26 @@ import data from "../db.json";
 
 function Course() {
   const { id } = useParams();
+  const course = data.courses.filter((course) => course.id == id)[0];
+  // states
   const [currentChapter, setCurrentChapter] = useState(0);
-  const handleClick = (number) => {
-    // console.log(number - 1);
-    setCurrentChapter(number - 1);
+  const [viewChapters, setViewChapters] = useState([1]);
+  // functions
+  const handleView = (number) => {
+    const view = viewChapters.map((chapter) => chapter);
+    if (!view.includes(number)) {
+      setViewChapters([...view, number]);
+    } else {
+      const removeIndex = view.indexOf(number);
+      view.splice(removeIndex, 1);
+      setViewChapters(view);
+    }
   };
   // Test rest API
   // const course = useLoaderData();
 
-  const course = data.courses.filter((course) => course.id == id)[0];
   console.log(course.content[currentChapter].chapterName);
+  console.log("viewchapter:" + viewChapters);
   // console.log(course.content[0].chapterContent);
   return (
     <section className="single-course">
@@ -27,25 +37,27 @@ function Course() {
         </h4>
         <video className="course-video" controls></video>
         <ul className="content-list">
+          {/* iterate over course */}
           {course.content.map((course, index) => {
             const { chapterName, chapterNumber, chapterContent } = course;
             return (
               <li
                 className="item"
                 key={"12451423" + index}
-                onClick={() => handleClick(chapterNumber)}
+                onClick={() => handleView(chapterNumber - 1)}
               >
                 <span>{chapterNumber}) </span>
                 <span className="title">{chapterName}</span>
                 <span
-                  className={`arrow-down ${
-                    index == currentChapter && "current"
-                  }`}
+                  className={`arrow-down
+                   ${viewChapters.includes(index) && "current"}`}
                 >
                   <AiOutlineRight />
                 </span>
                 <ul
-                  className={`sub-list ${index == currentChapter && "current"}`}
+                  className={`sub-list ${
+                    viewChapters.includes(index) && "current"
+                  }`}
                 >
                   {chapterContent.map((chapterItem, index) => {
                     return (
