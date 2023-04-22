@@ -22,8 +22,9 @@
   margin-bottom: 10px;
   font-weight: 500;
 }
-.single-course video {
+.single-course .display-content {
   display: block;
+  height: 200px;
   width: 90%;
   margin: auto;
   margin-bottom: 20px;
@@ -31,7 +32,7 @@
 .single-course .content-list {
   padding: 15px;
   list-style: none;
-  margin-bottom: 20px;
+  margin: 20px 5px;
   height: 500px;
   overflow-y: scroll;
 }
@@ -40,7 +41,7 @@
   padding: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.308);
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 500;
   border-radius: 5px;
 }
 .content-list .item .arrow-down {
@@ -52,7 +53,7 @@
   display: block;
   margin-top: 5px;
   margin-left: 50px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   list-style-type: disclosure-closed;
   font-weight: 400;
   display: none;
@@ -64,13 +65,42 @@
 .sub-list .sub-item::marker {
   color: rgba(0, 0, 0, 0.493);
 }
-
 .sub-list .sub-item {
+  list-style: none;
+}
+
+.sub-list .sub-item .sub-item-header {
   margin-top: 2px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.sub-list .sub-item .sub-item-header .duration {
+  margin-top: 2px;
+}
+
+.sub-list .sub-item .sub-list-details {
+  position: relative;
+  padding: 5px 20px 10px 20px;
+  font-size: 0.75rem;
+  display: none;
+}
+.sub-list-details .detail-item.video-link {
+  font-size: 0.8rem;
+  list-style-type: disclosure-closed;
+  margin-left: 2px;
+  color: blue;
+}
+.sub-list .sub-item .sub-list-details.current {
+  display: block;
+}
+.sub-list-details .detail-item .duration {
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 5px;
+  opacity: 0.6;
+}
+
 .sub-list .sub-item .arrow-down {
   position: absolute;
   margin-top: 4px;

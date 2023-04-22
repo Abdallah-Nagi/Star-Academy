@@ -22,8 +22,8 @@
           "chapterName": "Classification",
           "chapterContent": [
             {
-              "title": "Explanatory Video",
-              "display": "",
+              "title": "Explanation",
+              "source": "explanation/video",
               "duration": "1 Hour & 40 Minuts",
               "subContent": [
                 {
@@ -86,12 +86,12 @@
             },
             {
               "title": "Classified questions",
-              "display": "",
+              "source": "classified/video",
               "duration": "1 Hour & 40 Minuts"
             },
             {
               "title": "Flash Cards",
-              "display": "",
+              "source": "",
               "duration": "1 Hour & 40 Minuts"
             }
           ]

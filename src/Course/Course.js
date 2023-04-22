@@ -3,13 +3,20 @@ import { useLoaderData, useParams } from "react-router-dom";
 import "./Course.css";
 import { AiOutlineRight } from "react-icons/ai";
 import data from "../db.json";
-
+import video from "../assets/video.mp4";
 function Course() {
+  console.log(video);
   const { id } = useParams();
   const course = data.courses.filter((course) => course.id == id)[0];
   // states
-  const [currentChapter, setCurrentChapter] = useState(0);
-  const [viewChapters, setViewChapters] = useState([1]);
+  const [currentChapter, setCurrentChapter] = useState({
+    chapter: course.content[0],
+    subChapter: course.content[0].chapterContent[0],
+  });
+  const [viewChapters, setViewChapters] = useState([
+    0,
+    course.content[0].chapterContent[0].title,
+  ]);
   // functions
   const handleView = (number) => {
     const view = viewChapters.map((chapter) => chapter);
@@ -21,10 +28,17 @@ function Course() {
       setViewChapters(view);
     }
   };
+  const handleCurrentChapter = (chapter, subChapter) => {
+    setCurrentChapter({
+      chapter: chapter,
+      subChapter: subChapter,
+    });
+    // console.log(currentChapter);
+    // setCurrentChapter({ chapter: chapter, subChapter: subChapter });
+  };
   // Test rest API
   // const course = useLoaderData();
 
-  console.log(course.content[currentChapter].chapterName);
   console.log("viewchapter:" + viewChapters);
   // console.log(course.content[0].chapterContent);
   return (
@@ -33,45 +47,101 @@ function Course() {
       <div className="main-content">
         <h3 className="course-title">{course.title}</h3>
         <h4 className="course-chapter">
-          {course.content[currentChapter].chapterName}
+          {`${currentChapter.chapter.chapterName} / ${currentChapter.subChapter.title}`}
         </h4>
-        <video className="course-video" controls></video>
+        {currentChapter.subChapter.title !== "Flash Cards" ? (
+          <>
+            <p>This is a video for {currentChapter.chapter.chapterName}</p>
+            <video className="display-content video">
+              <source
+                src={currentChapter.subChapter.source}
+                type="video/mp4"
+                play
+              />
+            </video>
+          </>
+        ) : (
+          <div className="display-content flash-cards-container">
+            Flash Card Questions
+          </div>
+        )}
         <ul className="content-list">
           {/* iterate over course */}
           {course.content.map((course, index) => {
             const { chapterName, chapterNumber, chapterContent } = course;
             return (
-              <li
-                className="item"
-                key={"12451423" + index}
-                onClick={() => handleView(chapterNumber - 1)}
-              >
-                <span>{chapterNumber}) </span>
-                <span className="title">{chapterName}</span>
-                <span
-                  className={`arrow-down
-                   ${viewChapters.includes(index) && "current"}`}
+              <li className="item" key={"12451423" + index}>
+                <div
+                  className="chapter-header"
+                  onClick={() => handleView(chapterNumber - 1)}
                 >
-                  <AiOutlineRight />
-                </span>
+                  <span>{chapterNumber}) </span>
+                  <span className="title">{chapterName}</span>
+                  <span
+                    className={`arrow-down
+                  ${viewChapters.includes(index) && "current"}`}
+                  >
+                    <AiOutlineRight />
+                  </span>
+                </div>
                 <ul
                   className={`sub-list ${
                     viewChapters.includes(index) && "current"
                   }`}
                 >
-                  {chapterContent.map((chapterItem, index) => {
+                  {/* iterate over content of chapter */}
+                  {chapterContent.map((chapterHeader, index) => {
                     return (
                       <>
                         <li className="sub-item">
-                          <span
-                            className={`arrow-down ${index == 0 && "current"}`}
+                          <div
+                            className="sub-item-header"
+                            onClick={() => handleView(chapterHeader.title)}
                           >
-                            <AiOutlineRight />
-                          </span>
-                          <span className="title">{chapterItem.title}</span>
-                          <span className="duration">
-                            ({chapterItem.duration})
-                          </span>
+                            <span
+                              className={`arrow-down ${
+                                viewChapters.includes(chapterHeader.title) &&
+                                "current"
+                              }`}
+                            >
+                              <AiOutlineRight />
+                            </span>
+                            <span className="title">{chapterHeader.title}</span>
+                            <span className="duration">
+                              ({chapterHeader.duration})
+                            </span>
+                          </div>
+                          {
+                            <ul
+                              className={`sub-list-details ${
+                                viewChapters.includes(chapterHeader.title) &&
+                                "current"
+                              }`}
+                            >
+                              <li
+                                className="detail-item video-link"
+                                onClick={() =>
+                                  handleCurrentChapter(course, chapterHeader)
+                                }
+                              >
+                                Display chapter
+                              </li>
+                              {/* iterate over details of chapter if present */}
+                              {chapterHeader.subContent &&
+                                chapterHeader.subContent.map(
+                                  (chapterDetails) => {
+                                    return (
+                                      <li className="detail-item">
+                                        <span>{chapterDetails.name}</span>
+                                        <span className="duration">
+                                          ({chapterDetails.timeStamp})
+                                        </span>
+                                      </li>
+                                    );
+                                  }
+                                )}
+                            </ul>
+                          }
                         </li>
                       </>
                     );
