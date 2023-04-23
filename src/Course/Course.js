@@ -13,10 +13,7 @@ function Course() {
     chapter: course.content[0],
     subChapter: course.content[0].chapterContent[0],
   });
-  const [viewChapters, setViewChapters] = useState([
-    0,
-    course.content[0].chapterContent[0].title,
-  ]);
+  const [viewChapters, setViewChapters] = useState([0]);
   // functions
   const handleView = (number) => {
     const view = viewChapters.map((chapter) => chapter);
@@ -33,7 +30,9 @@ function Course() {
       chapter: chapter,
       subChapter: subChapter,
     });
-    // console.log(currentChapter);
+    window.scrollTo(0, 0);
+    setViewChapters([chapter.chapterNumber - 1]);
+    console.log(viewChapters);
     // setCurrentChapter({ chapter: chapter, subChapter: subChapter });
   };
   // Test rest API
@@ -51,7 +50,7 @@ function Course() {
         </h4>
         {currentChapter.subChapter.title !== "Flash Cards" ? (
           <>
-            <p>This is a video for {currentChapter.chapter.chapterName}</p>
+            <p>Video Source ={currentChapter.subChapter.source}</p>
             <video className="display-content video">
               <source
                 src={currentChapter.subChapter.source}
@@ -70,7 +69,12 @@ function Course() {
           {course.content.map((course, index) => {
             const { chapterName, chapterNumber, chapterContent } = course;
             return (
-              <li className="item" key={"12451423" + index}>
+              <li
+                className={`item ${
+                  currentChapter.chapter.chapterName == chapterName && "active"
+                }`}
+                key={"12451423" + index}
+              >
                 <div
                   className="chapter-header"
                   onClick={() => handleView(chapterNumber - 1)}
@@ -95,7 +99,10 @@ function Course() {
                       <>
                         <li className="sub-item">
                           <div
-                            className="sub-item-header"
+                            className={`sub-item-header ${
+                              currentChapter.subChapter.title ==
+                                chapterHeader.title && "active"
+                            }`}
                             onClick={() => handleView(chapterHeader.title)}
                           >
                             <span
@@ -116,6 +123,9 @@ function Course() {
                               className={`sub-list-details ${
                                 viewChapters.includes(chapterHeader.title) &&
                                 "current"
+                              } ${
+                                currentChapter.subChapter.title ==
+                                  chapterHeader.title && "active"
                               }`}
                             >
                               <li
