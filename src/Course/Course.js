@@ -13,7 +13,7 @@ function Course() {
     chapter: course.content[0],
     subChapter: course.content[0].chapterContent[0],
   });
-  const [viewChapters, setViewChapters] = useState([0]);
+  const [viewChapters, setViewChapters] = useState([]);
   // functions
   const handleView = (number) => {
     const view = viewChapters.map((chapter) => chapter);
@@ -31,7 +31,7 @@ function Course() {
       subChapter: subChapter,
     });
     window.scrollTo(0, 0);
-    setViewChapters([chapter.chapterNumber - 1]);
+    setViewChapters([]);
     console.log(viewChapters);
     // setCurrentChapter({ chapter: chapter, subChapter: subChapter });
   };
@@ -45,9 +45,25 @@ function Course() {
       <div className="hero"></div>
       <div className="main-content">
         <h3 className="course-title">{course.title}</h3>
-        <h4 className="course-chapter">
-          {`${currentChapter.chapter.chapterName} / ${currentChapter.subChapter.title}`}
-        </h4>
+        <h4 className="course-chapter">{currentChapter.chapter.chapterName}</h4>
+        <ul className="course-nav">
+          {currentChapter.chapter.chapterContent.map((subChapter) => {
+            return (
+              <li
+                className={`${
+                  currentChapter.subChapter.title == subChapter.title &&
+                  "active"
+                }`}
+                onClick={() =>
+                  handleCurrentChapter(currentChapter.chapter, subChapter)
+                }
+              >
+                {subChapter.title}
+              </li>
+            );
+          })}
+        </ul>
+        {/* check if current display is video or flash cards */}
         {currentChapter.subChapter.title !== "Flash Cards" ? (
           <>
             <p>Video Source ={currentChapter.subChapter.source}</p>

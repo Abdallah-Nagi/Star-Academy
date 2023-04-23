@@ -19,8 +19,29 @@
 }
 .course-chapter {
   padding-left: 25px;
-  margin-bottom: 10px;
   font-weight: 500;
+}
+.single-course .course-nav {
+  display: flex;
+  list-style: none;
+  font-size: 0.8rem;
+  margin: 0 0 10px 40px;
+}
+.single-course .course-nav li {
+  margin-right: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.single-course .course-nav li:hover {
+  opacity: 0.75;
+}
+.single-course .course-nav li.active,
+.single-course .course-nav li.active:hover {
+  opacity: 1;
+  color: mediumblue;
+}
+.single-course .course-nav li::before {
+  content: "/";
 }
 .single-course .display-content {
   display: block;
