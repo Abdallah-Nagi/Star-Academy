@@ -66,13 +66,8 @@ function Course() {
         {/* check if current display is video or flash cards */}
         {currentChapter.subChapter.title !== "Flash Cards" ? (
           <>
-            <p>Video Source ={currentChapter.subChapter.source}</p>
-            <video className="display-content video">
-              <source
-                src={currentChapter.subChapter.source}
-                type="video/mp4"
-                play
-              />
+            <video className="display-content video" controls>
+              <source src={video} type="video/mp4" play />
             </video>
           </>
         ) : (
@@ -116,14 +111,14 @@ function Course() {
                         <li className="sub-item">
                           <div
                             className={`sub-item-header ${
-                              currentChapter.subChapter.title ==
-                                chapterHeader.title && "active"
+                              currentChapter.subChapter.id ==
+                                chapterHeader.id && "active"
                             }`}
-                            onClick={() => handleView(chapterHeader.title)}
+                            onClick={() => handleView(chapterHeader.id)}
                           >
                             <span
                               className={`arrow-down ${
-                                viewChapters.includes(chapterHeader.title) &&
+                                viewChapters.includes(chapterHeader.id) &&
                                 "current"
                               }`}
                             >
@@ -137,11 +132,11 @@ function Course() {
                           {
                             <ul
                               className={`sub-list-details ${
-                                viewChapters.includes(chapterHeader.title) &&
+                                viewChapters.includes(chapterHeader.id) &&
                                 "current"
                               } ${
-                                currentChapter.subChapter.title ==
-                                  chapterHeader.title && "active"
+                                currentChapter.subChapter.id ==
+                                  chapterHeader.id && "active"
                               }`}
                             >
                               <li
