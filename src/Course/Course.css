@@ -63,11 +63,17 @@
 }
 .single-course .content-list .item {
   position: relative;
-  padding: 15px;
+  padding: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.308);
   cursor: pointer;
   font-weight: 500;
   border-radius: 5px;
+}
+.content-list .item .chapter-header {
+  padding: 5px;
+}
+.content-list .item.not-avaliable {
+  opacity: 0.7;
 }
 .content-list .item.active {
   background-color: var(--color-dark);
@@ -81,9 +87,14 @@
   margin-top: 2px;
   right: 10px;
 }
+.content-list .item .locked {
+  color: var(--color-dark);
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 3px;
+}
 .content-list .sub-list {
   display: block;
-  margin-top: 5px;
   margin-left: 50px;
   font-size: 0.9rem;
   list-style-type: disclosure-closed;
@@ -152,6 +163,9 @@
 .sub-list-details.active .detail-item.video-link {
   color: var(--color-secondary-light);
 }
+.detail-item.video-link .locked {
+  margin-left: 4px;
+}
 .sub-list-details .detail-item .duration {
   position: absolute;
   margin-top: 2px;
@@ -173,6 +187,30 @@
   font-size: 0.65rem;
 }
 
+.single-course .toaster-container {
+  width: 60%;
+  max-width: 500px;
+  position: fixed;
+  top: 100px;
+  left: 20px;
+}
+.single-course .toaster-container .toaster {
+  position: relative;
+  overflow: hidden;
+  background-color: #dc3545;
+  font-size: 0.7rem;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  box-shadow: 0 0 12px #999;
+  color: #fff;
+}
+.toaster .close {
+  font-size: 1rem;
+  position: absolute;
+  top: 8px;
+  margin-left: 5px;
+}
 @media screen and (max-width: 400px) {
   .single-course .course-nav {
     flex-direction: column;

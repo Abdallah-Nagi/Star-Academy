@@ -1,19 +1,22 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import "./Course.css";
-import { AiOutlineRight } from "react-icons/ai";
+import { AiOutlineRight, AiFillLock, AiFillCloseCircle } from "react-icons/ai";
 import data from "../db.json";
 import video from "../assets/video.mp4";
 function Course() {
   console.log(video);
   const { id } = useParams();
   const course = data.courses.filter((course) => course.id == id)[0];
+
   // states
   const [currentChapter, setCurrentChapter] = useState({
     chapter: course.content[0],
     subChapter: course.content[0].chapterContent[0],
   });
   const [viewChapters, setViewChapters] = useState([]);
+  const [purchase, setPurchase] = useState(false);
+  const [toasters, setToasters] = useState([]);
   // functions
   const handleView = (number) => {
     const view = viewChapters.map((chapter) => chapter);
@@ -26,14 +29,37 @@ function Course() {
     }
   };
   const handleCurrentChapter = (chapter, subChapter) => {
-    setCurrentChapter({
-      chapter: chapter,
-      subChapter: subChapter,
-    });
-    window.scrollTo(0, 0);
-    setViewChapters([]);
-    console.log(viewChapters);
+    if (purchase == false && chapter.chapterNumber !== 1) {
+      handleToaster();
+    } else {
+      setCurrentChapter({
+        chapter: chapter,
+        subChapter: subChapter,
+      });
+      window.scrollTo(0, 0);
+      setViewChapters([]);
+      console.log(viewChapters);
+    }
     // setCurrentChapter({ chapter: chapter, subChapter: subChapter });
+  };
+  const handleToaster = () => {
+    setToasters((prev) => {
+      return [
+        ...prev,
+        <div className="toaster active">
+          Please login first
+          <span className="close">
+            <AiFillCloseCircle />
+          </span>
+        </div>,
+      ];
+    });
+    setTimeout(() => {
+      setToasters((prev) => {
+        console.log(prev.slice(0, -1));
+        return prev.slice(0, -1);
+      });
+    }, 1500);
   };
   // Test rest API
   // const course = useLoaderData();
@@ -83,7 +109,7 @@ function Course() {
               <li
                 className={`item ${
                   currentChapter.chapter.chapterName == chapterName && "active"
-                }`}
+                } ${index !== 0 && purchase == false && "not-avaliable"}`}
                 key={"12451423" + index}
               >
                 <div
@@ -92,6 +118,11 @@ function Course() {
                 >
                   <span>{chapterNumber}) </span>
                   <span className="title">{chapterName}</span>
+                  {index !== 0 && purchase == false && (
+                    <span className="locked">
+                      <AiFillLock />
+                    </span>
+                  )}
                   <span
                     className={`arrow-down
                   ${viewChapters.includes(index) && "current"}`}
@@ -146,6 +177,11 @@ function Course() {
                                 }
                               >
                                 Display chapter
+                                <span className="locked">
+                                  {!purchase && chapterNumber !== 1 && (
+                                    <AiFillLock />
+                                  )}
+                                </span>
                               </li>
                               {/* iterate over details of chapter if present */}
                               {chapterHeader.subContent &&
@@ -173,6 +209,7 @@ function Course() {
           })}
         </ul>
       </div>
+      <div className="toaster-container">{toasters}</div>
     </section>
   );
 }
