@@ -70,144 +70,154 @@ function Course() {
     <section className="single-course">
       <div className="hero"></div>
       <div className="main-content">
-        <h3 className="course-title">{course.title}</h3>
-        <h4 className="course-chapter">{currentChapter.chapter.chapterName}</h4>
-        <ul className="course-nav">
-          {currentChapter.chapter.chapterContent.map((subChapter) => {
-            return (
-              <li
-                className={`${
-                  currentChapter.subChapter.title == subChapter.title &&
-                  "active"
-                }`}
-                onClick={() =>
-                  handleCurrentChapter(currentChapter.chapter, subChapter)
-                }
-              >
-                {subChapter.title}
-              </li>
-            );
-          })}
-        </ul>
-        {/* check if current display is video or flash cards */}
-        {currentChapter.subChapter.title !== "Flash Cards" ? (
-          <>
-            <video className="display-content video" controls>
-              <source src={video} type="video/mp4" play />
-            </video>
-          </>
-        ) : (
-          <div className="display-content flash-cards-container">
-            Flash Card Questions
-          </div>
-        )}
-        <ul className="content-list">
-          {/* iterate over course */}
-          {course.content.map((course, index) => {
-            const { chapterName, chapterNumber, chapterContent } = course;
-            return (
-              <li
-                className={`item ${
-                  currentChapter.chapter.chapterName == chapterName && "active"
-                } ${index !== 0 && purchase == false && "not-avaliable"}`}
-                key={"12451423" + index}
-              >
-                <div
-                  className="chapter-header"
-                  onClick={() => handleView(chapterNumber - 1)}
-                >
-                  <span>{chapterNumber}) </span>
-                  <span className="title">{chapterName}</span>
-                  {index !== 0 && purchase == false && (
-                    <span className="locked">
-                      <AiFillLock />
-                    </span>
-                  )}
-                  <span
-                    className={`arrow-down
-                  ${viewChapters.includes(index) && "current"}`}
-                  >
-                    <AiOutlineRight />
-                  </span>
-                </div>
-                <ul
-                  className={`sub-list ${
-                    viewChapters.includes(index) && "current"
+        <div className="title-wrapper">
+          <h3 className="course-title">{course.title}</h3>
+          <h4 className="course-chapter">
+            {`${currentChapter.chapter.chapterNumber}) 
+          ${currentChapter.chapter.chapterName}`}
+          </h4>
+          <ul className="course-nav">
+            {currentChapter.chapter.chapterContent.map((subChapter) => {
+              return (
+                <li
+                  className={`${
+                    currentChapter.subChapter.title == subChapter.title &&
+                    "active"
                   }`}
+                  onClick={() =>
+                    handleCurrentChapter(currentChapter.chapter, subChapter)
+                  }
                 >
-                  {/* iterate over content of chapter */}
-                  {chapterContent.map((chapterHeader, index) => {
-                    return (
-                      <>
-                        <li className="sub-item">
-                          <div
-                            className={`sub-item-header ${
-                              currentChapter.subChapter.id ==
-                                chapterHeader.id && "active"
-                            }`}
-                            onClick={() => handleView(chapterHeader.id)}
-                          >
-                            <span
-                              className={`arrow-down ${
-                                viewChapters.includes(chapterHeader.id) &&
-                                "current"
-                              }`}
-                            >
-                              <AiOutlineRight />
-                            </span>
-                            <span className="title">{chapterHeader.title}</span>
-                            <span className="duration">
-                              ({chapterHeader.duration})
-                            </span>
-                          </div>
-                          {
-                            <ul
-                              className={`sub-list-details ${
-                                viewChapters.includes(chapterHeader.id) &&
-                                "current"
-                              } ${
+                  {subChapter.title}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="content-wrapper">
+          {/* check if current display is video or flash cards */}
+          {currentChapter.subChapter.title !== "Flash Cards" ? (
+            <>
+              <video className="display-content video" controls>
+                <source src={video} type="video/mp4" play />
+              </video>
+            </>
+          ) : (
+            <div className="display-content flash-cards-container">
+              Flash Card Questions
+            </div>
+          )}
+          <ul className="content-list">
+            {/* iterate over course */}
+            {course.content.map((course, index) => {
+              const { chapterName, chapterNumber, chapterContent } = course;
+              return (
+                <li
+                  className={`item ${
+                    currentChapter.chapter.chapterName == chapterName &&
+                    "active"
+                  } ${index !== 0 && purchase == false && "not-avaliable"}`}
+                  key={"12451423" + index}
+                >
+                  <div
+                    className="chapter-header"
+                    onClick={() => handleView(chapterNumber - 1)}
+                  >
+                    <span>{chapterNumber}) </span>
+                    <span className="title">{chapterName}</span>
+                    {index !== 0 && purchase == false && (
+                      <span className="locked">
+                        <AiFillLock />
+                      </span>
+                    )}
+                    <span
+                      className={`arrow-down
+                  ${viewChapters.includes(index) && "current"}`}
+                    >
+                      <AiOutlineRight />
+                    </span>
+                  </div>
+                  <ul
+                    className={`sub-list ${
+                      viewChapters.includes(index) && "current"
+                    }`}
+                  >
+                    {/* iterate over content of chapter */}
+                    {chapterContent.map((chapterHeader, index) => {
+                      return (
+                        <>
+                          <li className="sub-item">
+                            <div
+                              className={`sub-item-header ${
                                 currentChapter.subChapter.id ==
                                   chapterHeader.id && "active"
                               }`}
+                              onClick={() => handleView(chapterHeader.id)}
                             >
-                              <li
-                                className="detail-item video-link"
-                                onClick={() =>
-                                  handleCurrentChapter(course, chapterHeader)
-                                }
+                              <span
+                                className={`arrow-down ${
+                                  viewChapters.includes(chapterHeader.id) &&
+                                  "current"
+                                }`}
                               >
-                                Display chapter
-                                <span className="locked">
-                                  {!purchase && chapterNumber !== 1 && (
-                                    <AiFillLock />
-                                  )}
-                                </span>
-                              </li>
-                              {/* iterate over details of chapter if present */}
-                              {chapterHeader.subContent &&
-                                chapterHeader.subContent.map(
-                                  (chapterDetails) => {
-                                    return (
-                                      <li className="detail-item">
-                                        <span>{chapterDetails.name}</span>
-                                        <span className="duration">
-                                          ({chapterDetails.timeStamp})
-                                        </span>
-                                      </li>
-                                    );
+                                <AiOutlineRight />
+                              </span>
+                              <span className="title">
+                                {chapterHeader.title}
+                              </span>
+                              <span className="duration">
+                                ({chapterHeader.duration})
+                              </span>
+                            </div>
+                            {
+                              <ul
+                                className={`sub-list-details ${
+                                  viewChapters.includes(chapterHeader.id) &&
+                                  "current"
+                                } ${
+                                  currentChapter.subChapter.id ==
+                                    chapterHeader.id && "active"
+                                }`}
+                              >
+                                <li
+                                  className="detail-item video-link"
+                                  onClick={() =>
+                                    handleCurrentChapter(course, chapterHeader)
                                   }
-                                )}
-                            </ul>
-                          }
-                        </li>
-                      </>
-                    );
-                  })}
-                </ul>
-              </li>
-            );
-          })}
-        </ul>
+                                >
+                                  Display chapter
+                                  <span className="locked">
+                                    {!purchase && chapterNumber !== 1 && (
+                                      <AiFillLock />
+                                    )}
+                                  </span>
+                                </li>
+                                {/* iterate over details of chapter if present */}
+                                {chapterHeader.subContent &&
+                                  chapterHeader.subContent.map(
+                                    (chapterDetails) => {
+                                      return (
+                                        <li className="detail-item">
+                                          <span>{chapterDetails.name}</span>
+                                          <span className="duration">
+                                            ({chapterDetails.timeStamp})
+                                          </span>
+                                        </li>
+                                      );
+                                    }
+                                  )}
+                              </ul>
+                            }
+                          </li>
+                        </>
+                      );
+                    })}
+                  </ul>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
       <div className="toaster-container">{toasters}</div>
     </section>
