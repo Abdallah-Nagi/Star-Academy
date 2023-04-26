@@ -15,7 +15,7 @@ function Contact() {
         <form
           action="https://public.herotofu.com/v1/d2b64930-ddee-11ed-bc08-2fcba7301103"
           method="post"
-          accept-charset="UTF-8"
+          acceptCharset="UTF-8"
           className="contact-form"
         >
           <input required name="Name" type="text" placeholder="Name" />
@@ -43,8 +43,8 @@ function Contact() {
             <input
               type="text"
               name="_gotcha"
-              tabindex="-1"
-              autocomplete="off"
+              tabIndex="-1"
+              autoComplete="off"
             />
           </div>
         </form>

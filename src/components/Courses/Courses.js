@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./Courses.css";
 import { AiOutlineSearch } from "react-icons/ai";
-import biologyImage from "../assets/biology.jpg";
-import profile from "../assets/profile.jpg";
+import biologyImage from "../../assets/biology.jpg";
+import profile from "../../assets/profile.jpg";
 import { Link, useLoaderData } from "react-router-dom";
-import data from "../db.json";
+import data from "../../db.json";
 function Courses() {
   // use as rest API
   // const courses = useLoaderData();

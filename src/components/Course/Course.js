@@ -2,8 +2,8 @@ import React, { useRef, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import "./Course.css";
 import { AiOutlineRight, AiFillLock, AiFillCloseCircle } from "react-icons/ai";
-import data from "../db.json";
-import video from "../assets/video.mp4";
+import data from "../../db.json";
+import video from "../../assets/video.mp4";
 function Course() {
   console.log(video);
   const { id } = useParams();
