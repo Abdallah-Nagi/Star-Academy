@@ -1,9 +1,35 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./SignUp.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
-
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../../config/firebase";
+import { useGlobalContext } from "../../../helpers/context";
 function SignUp() {
+  const { user, setUser } = useGlobalContext();
+  const navigate = useNavigate();
+  useEffect(() => {
+    console.log(user);
+    if (user) {
+      navigate("/account");
+    } else {
+      navigate("/account/signup");
+    }
+  }, [user]);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await createUserWithEmailAndPassword(auth, email.value, password.value)
+      .then((userCredential) => {
+        const newUser = userCredential.user;
+        setUser(newUser);
+        navigate("/account");
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode);
+      });
+  };
   // states
   const [name, setName] = useState({
     value: "",
@@ -49,7 +75,7 @@ function SignUp() {
       <div className="account-wrapper">
         <div className="form-wrapper">
           <h4 className="form-title">Create Account</h4>
-          <form>
+          <form onSubmit={(e) => handleSubmit(e)}>
             <div className="field-wrap">
               <label className={`${name.isActive ? "active" : ""}`}>
                 Name<span className="req">*</span>
@@ -97,9 +123,9 @@ function SignUp() {
             </div>
           </form>
           <p className="form-paragraph">
-            Already have an account
+            Already have an account,
             <Link className="redirect" to={"/account/login"}>
-              Login
+              Login.
             </Link>
           </p>
         </div>

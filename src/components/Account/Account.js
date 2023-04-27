@@ -1,14 +1,19 @@
 import React, { useEffect } from "react";
-import { redirect, useNavigate } from "react-router-dom";
-
+import "./Account.css";
+import { useNavigate } from "react-router-dom";
+import { useGlobalContext } from "../../helpers/context";
 function Account() {
+  const { user } = useGlobalContext();
   const navigate = useNavigate();
   useEffect(() => {
-    if (true) {
+    console.log(user);
+    if (!user) {
       navigate("/account/signup");
+    } else {
+      navigate("/account");
     }
-  }, []);
-  return <div>Account</div>;
+  }, [user]);
+  return <section className="account">Your Account</section>;
 }
 
 export default Account;
