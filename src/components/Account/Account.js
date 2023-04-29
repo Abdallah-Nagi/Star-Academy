@@ -2,17 +2,27 @@ import React, { useEffect } from "react";
 import "./Account.css";
 import { useNavigate } from "react-router-dom";
 import { useGlobalContext } from "../../helpers/context";
+import { auth } from "../../config/firebase";
 function Account() {
-  const { user } = useGlobalContext();
+  const { userAuth, loadingAuth } = useGlobalContext();
   const navigate = useNavigate();
   useEffect(() => {
-    console.log(user);
-    if (!user) {
-      navigate("/account/signup");
-    } else {
+    if (loadingAuth === true) {
+      return;
+    } else if (userAuth) {
       navigate("/account");
+    } else {
+      navigate("/account/signup");
     }
-  }, [user]);
+  }, [userAuth, loadingAuth]);
+
+  if (loadingAuth) {
+    return (
+      <section className="loading" style={{ marginTop: 200 }}>
+        Loading....
+      </section>
+    );
+  }
   return <section className="account">Your Account</section>;
 }
 

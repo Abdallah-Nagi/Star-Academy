@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
-
+import { useGlobalContext } from "../../../helpers/context";
+import { onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../../config/firebase";
 function Login() {
+  const { userAuth, loadingAuth } = useGlobalContext();
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (loadingAuth) {
+      return;
+    } else if (userAuth) {
+      navigate("/account");
+    } else {
+      navigate("/account/login");
+    }
+  }, [userAuth, loadingAuth]);
   // states
   const [email, setEmail] = useState({
     value: "",
@@ -16,6 +29,16 @@ function Login() {
   const [isShown, setIsShown] = useState(false);
 
   // functions
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    await signInWithEmailAndPassword(auth, email.value, password.value)
+      .then(() => {
+        navigate("/account");
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
 
   const handleEmail = (e) => {
     setEmail((prev) => ({ ...prev, value: e.target.value }));
@@ -34,12 +57,20 @@ function Login() {
     }
   };
 
+  if (loadingAuth) {
+    return (
+      <section className="loading" style={{ marginTop: 200 }}>
+        Loading...
+      </section>
+    );
+  }
+
   return (
     <section className="form">
       <div className="account-wrapper">
         <div className="form-wrapper">
           <h4 className="form-title">Login</h4>
-          <form>
+          <form onSubmit={(e) => handleLogin(e)}>
             <div className="field-wrap">
               <label className={`${email.isActive ? "active" : ""}`}>
                 Email<span className="req">*</span>
@@ -59,7 +90,7 @@ function Login() {
               <input
                 value={password.value}
                 onChange={(e) => handlePassword(e)}
-                type="password"
+                type={`${isShown ? "text" : "password"}`}
                 required
                 autoComplete="off"
               />

@@ -1,4 +1,5 @@
 import {
+  Navigate,
   Route,
   RouterProvider,
   createBrowserRouter,
@@ -20,7 +21,6 @@ import CoursesLayout from "./layouts/CoursesLayout";
 import AccountLayout from "./layouts/AccountLayout";
 // Scroll to top
 import ScrollToTop from "./helpers/ScrollToTop";
-
 const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>

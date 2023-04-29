@@ -46,6 +46,7 @@
 
 .form-wrapper input {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   display: block;
   width: 100%;
@@ -58,6 +59,15 @@
   color: white;
   border-radius: 3px;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.form-wrapper input:-webkit-autofill,
+.form-wrapper input:-webkit-autofill:hover,
+.form-wrapper input:-webkit-autofill:focus,
+.form-wrapper input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--color-dark) inset !important;
+}
+.form-wrapper input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
 }
 .form-wrapper input.password-input {
   padding-right: 30px;

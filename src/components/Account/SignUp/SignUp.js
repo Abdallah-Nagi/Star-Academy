@@ -2,33 +2,51 @@ import React, { useEffect, useState } from "react";
 import "./SignUp.css";
 import { Link, useNavigate } from "react-router-dom";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../../config/firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth, db } from "../../../config/firebase";
+import { setDoc, doc, serverTimestamp } from "firebase/firestore";
 import { useGlobalContext } from "../../../helpers/context";
+
 function SignUp() {
-  const { user, setUser } = useGlobalContext();
+  const { userAuth, loadingAuth } = useGlobalContext();
   const navigate = useNavigate();
   useEffect(() => {
-    console.log(user);
-    if (user) {
+    // if loading == true => didnt fetch user info from AuthState
+    if (loadingAuth === true) {
+      return;
+    } else if (userAuth) {
       navigate("/account");
     } else {
       navigate("/account/signup");
     }
-  }, [user]);
+  }, [userAuth, loadingAuth]);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await createUserWithEmailAndPassword(auth, email.value, password.value)
-      .then((userCredential) => {
-        const newUser = userCredential.user;
-        setUser(newUser);
-        navigate("/account");
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorCode);
+    try {
+      const res = await createUserWithEmailAndPassword(
+        auth,
+        email.value,
+        password.value
+      );
+      await setDoc(doc(db, "users", res.user.uid), {
+        name: name.value,
+        email: email.value,
+        timeStamp: serverTimestamp(),
       });
+    } catch (error) {
+      console.log(error);
+    }
+
+    // try {
+    //   const docRef = await addDoc(collection(db, "users", userAuth.uid), {
+    //     name: name.value,
+    //     email: email.value,
+    //   });
+    //   console.log("Document written with ID: ", docRef.id);
+    // } catch (e) {
+    //   console.error("Error adding document: ", e);
+    // }
   };
   // states
   const [name, setName] = useState({
@@ -70,6 +88,10 @@ function SignUp() {
     }
   };
 
+  // if loading is true => didn't fetch user auth
+  if (loadingAuth) {
+    return <section className="loading">Loading....</section>;
+  }
   return (
     <section className="form">
       <div className="account-wrapper">
